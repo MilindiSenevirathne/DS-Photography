@@ -1,0 +1,96 @@
+.nav-link {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(147, 144, 141);
+}
+
+.name {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Petit Formal Script", cursive;
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.name_div {
+  position: relative;
+  text-align: center;
+  color: rgb(144, 149, 149);
+}
+
+.camera_img {
+  height: 100px;
+  opacity: 0.12;
+}
+
+.desc1 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 17px;
+  color: rgb(147, 144, 141);
+}
+
+.fb {
+  height: 25px;
+  opacity: 0.5;
+}
+
+.fb:hover {
+  transform: scale(1.2);
+  transition: ease-in-out;
+}
+
+.insta {
+  height: 25px;
+  opacity: 0.5;
+}
+
+.insta:hover {
+  transform: scale(1.2);
+  transition: ease-in-out;
+}
+
+.icons {
+  text-align: center;
+}
+
+.location {
+  font-family: "Alegreya Sans SC", sans-serif;
+  /* font-family: "DM Serif Display", serif;
+  font-family: "Handlee", cursive; */
+  /* font-family: "Petit Formal Script", cursive; */
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 20px;
+  color: rgb(147, 144, 141);
+}
+
+.about{
+    font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about_name{
+    font-family: "Alegreya Sans SC", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 17px;
+  color: rgb(147, 144, 141);
+  text-align: center;
+}
+
+.about_img{
+    height: 500px;
+}
+
+.box_1{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}

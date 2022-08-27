@@ -3,7 +3,7 @@
 .slideshow {
     margin: 0 auto;
     /* overflow: hidden; */
-    max-width: 280px;
+    max-width: 250px;
     height: 500px;
   }
 
@@ -18,4 +18,18 @@
   height: 600px;
   width: 100%;
   border-radius: 40px;
+  }
+
+  .location{
+    text-align: center;
+    margin-top: 250px;
+  }
+
+  .line{
+    color: rgb(91, 101, 109);
+    height: 50px;
+  }
+
+  .slide_image{
+    
   }
