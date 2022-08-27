@@ -1,10 +1,13 @@
+import Slideshow from "../Components/SlideShow";
+
 const Home = () => {
   return (
     <div>
-      <div className="navbar" style={{width:"60%"}}>
+      <div>
+      <div className="d-flex justify-content-around navbar" style={{}}>
         <div className="nav_links">
-          <ul class="nav flex-column">
-            <li class="nav-item">
+          <ul class="nav flex-column" style={{color:"black"}}>
+            <li class="nav-item" >
               <a class="nav-link active" href="#">
                 WELCOME
               </a>
@@ -21,6 +24,11 @@ const Home = () => {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
+                PORTFOLIO
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
                 CONTACT
               </a>
             </li>
@@ -28,12 +36,17 @@ const Home = () => {
         </div>
 
         <div className="name">
-            <h1>DS Photography</h1>
+            <h1 style={{fontFamily:"Space Mono"}}>DS Photography</h1>
         </div>
 
         <div>
             <h6>Best phogragraphs and <br/>give value for money.</h6>
         </div>
+      </div>
+      </div>
+
+      <div>
+        <Slideshow />
       </div>
     </div>
   );
