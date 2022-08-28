@@ -3,7 +3,8 @@ import "./Home.css";
 import Image from "../Assets/camera.png";
 import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
-import Image2 from "../Assets/me4.jpg";
+import Image2 from "../Assets/Disal.jpg";
+import Image3 from "../Assets/2.jpg";
 
 const Home = () => {
   return (
@@ -99,10 +100,20 @@ const Home = () => {
       </div>
 
       <div className="mt-4 my_photography">
-        <h1 className="about">My Photography</h1>
-        <div className="box">
-          <div className="box_2">
-            <h4>hvshjsvchscvskcjsc c nsc nmsc jscjhsvchkasvk.csc</h4>
+        <div className="mt-4 box">
+          <div className="d-flex justify-content-center box_2">
+          <div className="box_3">
+            <h3 className="about_name2">My Photography</h3>
+            <h4 className="desc_2">
+              I am a Texas based wedding and portrait photographer. I started
+              photography like most do- as a hobby! I would have never dreamt
+              that it would eventually turn into a career for me. After
+              beginning as a hobby I realized that I liked taking photos and
+              making people FEEL a certain way more than I thought possible! I
+              dived into practicing more, educating myself and thus started the
+              beginning of a wonderful thing that is now my full-time job.
+            </h4>
+          </div>
           </div>
         </div>
       </div>
