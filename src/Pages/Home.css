@@ -189,7 +189,7 @@
   border: solid 5px #d9d9d9;
   padding: 15px;
   background-clip: content-box; /* support: IE9+ */
-  background-color: rgb(240, 240, 240,0.7);
+  background-color: rgb(240, 240, 240, 0.7);
   max-width: 800px;
   max-height: 320px;
   margin-top: 70px;
@@ -199,36 +199,168 @@
   color: black;
 }
 
-.work_img{
-    height: 450px;
-    filter: brightness(50%);
+.work_img {
+  height: 450px;
+  filter: brightness(50%);
 }
 
-.work_div{
-    position: relative;
+.work_div {
+  position: relative;
   text-align: center;
   color: rgb(144, 149, 149);
+  width: 300px;
+  height: 450px;
+  background: url("../Assets/Home/H3.jpg") no-repeat;
+  background-size: 300px 450px;
+  margin: 50px;
+  transition: ease-in-out .5s;
+  /* filter: brightness(80%); */
 }
 
-.work_div:hover.work_img{
+.work_div:hover{
+    background: url("../Assets/Home/H6.jpg") no-repeat;
+    background-size: 300px 450px;
+    transition: ease-in-out .5s;
+}
+
+.work_div:hover .work_type{
     display: none;
 }
 
-.work_type{
+.work_div:hover .work_button{
+    display: inline;
+}
+
+.work_button{
+    display: none;
     font-family: "Alegreya Sans SC", sans-serif;
+    /* font-family: "Petit Formal Script", cursive; */
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 500;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.work_type {
+  font-family: "Alegreya Sans SC", sans-serif;
   font-family: "Petit Formal Script", cursive;
   /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
   position: absolute;
-  top: 75%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
-.hidden_img{
-    display: none;
+.work_div2 {
+    position: relative;
+    text-align: center;
+    color: rgb(144, 149, 149);
+    width: 300px;
     height: 450px;
-    filter: brightness(50%);
-}
+    background: url("../Assets/Home/W1.jpg") no-repeat;
+    background-size: 300px 450px;
+    margin: 50px;
+    transition: ease-in-out .5s;
+    /* filter: brightness(80%); */
+  }
+  
+  .work_div2:hover{
+      background: url("../Assets/Home/H1.JPG") no-repeat;
+      background-size: 300px 450px;
+      transition: ease-in-out .5s;
+  }
+  
+  .work_div2:hover .work_type{
+      display: none;
+  }
+  
+  .work_div2:hover .work_button{
+      display: inline;
+  }
+
+  .work_div3 {
+    position: relative;
+    text-align: center;
+    color: rgb(144, 149, 149);
+    width: 300px;
+    height: 450px;
+    background: url("../Assets/Home/H11.jpg") no-repeat;
+    background-size: 300px 450px;
+    margin: 50px;
+    transition: ease-in-out .5s;
+    /* filter: brightness(80%); */
+  }
+  
+  .work_div3:hover{
+      background: url("../Assets/Home/H2.jpg") no-repeat;
+      background-size: 300px 450px;
+      transition: ease-in-out .5s;
+  }
+  
+  .work_div3:hover .work_type{
+      display: none;
+  }
+  
+  .work_div3:hover .work_button{
+      display: inline;
+  }
+
+  .work_div4 {
+    position: relative;
+    text-align: center;
+    color: rgb(144, 149, 149);
+    width: 300px;
+    height: 450px;
+    background: url("../Assets/Home/H7.jpg") no-repeat;
+    background-size: 300px 450px;
+    margin: 50px;
+    transition: ease-in-out .5s;
+    /* filter: brightness(80%); */
+  }
+  
+  .work_div4:hover{
+      background: url("../Assets/Home/H9.jpg") no-repeat;
+      background-size: 300px 450px;
+      transition: ease-in-out .5s;
+  }
+  
+  .work_div4:hover .work_type{
+      display: none;
+  }
+  
+  .work_div4:hover .work_button{
+      display: inline;
+  }
+
+  .work_div5 {
+    position: relative;
+    text-align: center;
+    color: rgb(144, 149, 149);
+    width: 300px;
+    height: 450px;
+    background: url("../Assets/Home/W3.jpg") no-repeat;
+    background-size: 300px 450px;
+    margin: 50px;
+    transition: ease-in-out .5s;
+    /* filter: brightness(80%); */
+  }
+  
+  .work_div5:hover{
+      background: url("../Assets/Home/W2.jpg") no-repeat;
+      background-size: 300px 450px;
+      transition: ease-in-out .5s;
+  }
+  
+  .work_div5:hover .work_type{
+      display: none;
+  }
+  
+  .work_div5:hover .work_button{
+      display: inline;
+  }

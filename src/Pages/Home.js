@@ -4,8 +4,8 @@ import Image from "../Assets/camera.png";
 import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
 import Image2 from "../Assets/Disal.jpg";
-import Wedding from "../Assets/Home/H3.jpg"
-import Wedding2 from "../Assets/Home/H6.jpg"
+import Wedding from "../Assets/Home/H3.jpg";
+import Wedding2 from "../Assets/Home/H6.jpg";
 
 const Home = () => {
   return (
@@ -147,7 +147,7 @@ const Home = () => {
         <h6 className="about_name">Work Types</h6>
         <div className="">
           <div>
-            <h4 className="desc_2" style={{textAlign:"center"}}>
+            <h4 className="desc_2" style={{ textAlign: "center" }}>
               PassionArt wedding photography sri lanka seek to portray all
               brides & bridegrooms in their own natural style<br></br> and we
               make the photos to be expressions of their natural charm. Blending
@@ -155,12 +155,47 @@ const Home = () => {
               wedding day photos to be really awesome.
             </h4>
           </div>
-          <div>
-          <div className="work_div">
-            <img src={Wedding} alt="Snow" className="work_img"/>
-            <img src={Wedding2} alt="Snow" className="hidden_img"/>
-            <h1 className="work_type">Weddings</h1>
-          </div>
+          <div className="d-flex justify-content-center">
+            <div className="work_div">
+              <button className="btn btn-light btn-rounded work_button">
+                View Albums
+              </button>
+              <button className="btn btn-warning btn-rounded work_type">
+                Weddings
+              </button>
+            </div>
+            <div className="work_div2">
+              <button className="btn btn-light btn-rounded work_button">
+                View Albums
+              </button>
+              <button className="btn btn-warning btn-rounded work_type">
+                Homecomings
+              </button>
+            </div>
+            <div className="work_div3">
+              <button className="btn btn-light btn-rounded work_button">
+                View Albums
+              </button>
+              <button className="btn btn-warning btn-rounded work_type">
+                Pre Shoots
+              </button>
+            </div>
+            <div className="work_div4">
+              <button className="btn btn-light btn-rounded work_button">
+                View Albums
+              </button>
+              <button className="btn btn-warning btn-rounded work_type">
+                Engagements
+              </button>
+            </div>
+            <div className="work_div5">
+              <button className="btn btn-light btn-rounded work_button">
+                View Albums
+              </button>
+              <button className="btn btn-warning btn-rounded work_type">
+                Birthday
+              </button>
+            </div>
           </div>
         </div>
       </div>
