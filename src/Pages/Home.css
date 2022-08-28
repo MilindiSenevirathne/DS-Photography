@@ -189,7 +189,7 @@
   border: solid 5px #d9d9d9;
   padding: 15px;
   background-clip: content-box; /* support: IE9+ */
-  background-color: rgb(240, 240, 240,0.5);
+  background-color: rgb(240, 240, 240,0.7);
   max-width: 800px;
   max-height: 320px;
   margin-top: 70px;
@@ -197,4 +197,38 @@
   margin: auto;
   margin-top: 10%;
   color: black;
+}
+
+.work_img{
+    height: 450px;
+    filter: brightness(50%);
+}
+
+.work_div{
+    position: relative;
+  text-align: center;
+  color: rgb(144, 149, 149);
+}
+
+.work_div:hover.work_img{
+    display: none;
+}
+
+.work_type{
+    font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Petit Formal Script", cursive;
+  /* font-family: "Poppins", sans-serif; */
+  font-weight: 500;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+}
+
+.hidden_img{
+    display: none;
+    height: 450px;
+    filter: brightness(50%);
 }
