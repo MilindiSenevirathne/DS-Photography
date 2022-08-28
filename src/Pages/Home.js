@@ -71,8 +71,12 @@ const Home = () => {
               give value for money.
             </div>
             <div className="icons">
-                <a href="facebook.com"><img src={Facebook} className="me-2 fb"/></a>
-                <a href="facebook.com"><img src={Instagram} className="insta"/></a>
+              <a href="facebook.com">
+                <img src={Facebook} className="me-2 fb" />
+              </a>
+              <a href="facebook.com">
+                <img src={Instagram} className="insta" />
+              </a>
             </div>
           </div>
         </div>
@@ -94,17 +98,35 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="mt-4 my_photography">
+        <h1 className="about">My Photography</h1>
+        <div className="box">
+          <div className="box_2">
+            <h4>hvshjsvchscvskcjsc c nsc nmsc jscjhsvchkasvk.csc</h4>
+          </div>
+        </div>
+      </div>
+
       <div className="mt-4">
         <h1 className="about">About Me</h1>
         <h6 className="about_name">Disal Senevirathne</h6>
-        <div>
-        <img src={Image2} alt="Snow" className="about_img" />
-        <div className="box_1">
-            <div className="box_2">
-                <h4>hvshjsvchscvskcjsc c nsc nmsc jscjhsvchkasvk.csc</h4>
-            </div>
-        </div>
-        <img src={Image2} alt="Snow" className="about_img" />
+        <div className="d-flex justify-content-center">
+          <div className="box_1">
+            <h3 className="about_name2">I'm Disal Senevirathne</h3>
+            <h4 className="desc_2">
+              I am a Texas based wedding and portrait photographer. I started
+              photography like most do- as a hobby! I would have never dreamt
+              that it would eventually turn into a career for me. After
+              beginning as a hobby I realized that I liked taking photos and
+              making people FEEL a certain way more than I thought possible! I
+              dived into practicing more, educating myself and thus started the
+              beginning of a wonderful thing that is now my full-time job.
+            </h4>
+            <button className="about_button">Learn More</button>
+          </div>
+          <div className="">
+            <img src={Image2} alt="Snow" className="about_img" />
+          </div>
         </div>
       </div>
     </div>

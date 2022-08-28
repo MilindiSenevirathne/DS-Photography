@@ -81,16 +81,80 @@
     font-family: "Alegreya Sans SC", sans-serif;
   /* font-family: "Poppins", sans-serif; */
   font-size: 17px;
-  color: rgb(147, 144, 141);
+  color: rgb(144, 149, 149);
   text-align: center;
 }
 
 .about_img{
-    height: 500px;
+    height: 450px;
+    display: inline-block;
+    margin-left: 1000px;
+    transition: ease-in-out .5s;
+}
+
+.about_img:hover{
+    transform: scale(0.8);
 }
 
 .box_1{
+  border: solid 5px #d9d9d9;
+  padding: 15px;
+  background-clip: content-box; /* support: IE9+ */
+  background-color: rgb(240,240,240);
+  max-width: 800px;
+  max-height: 320px;
+  margin-top: 70px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
 }
+
+.desc_2{
+    padding: 15px;
+    font-size: 22px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+/* font-family: 'DM Serif Display', serif; */
+font-family: 'Handlee', cursive;
+/* font-family: 'Petit Formal Script', cursive; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.about_name2{
+    font-family: "Alegreya Sans SC", sans-serif;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: bold;
+  font-size: 25px;
+ padding: 20px;
+
+}
+
+.about_button{
+    margin-top: 40px;
+    margin-left: 15px;
+    font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 3px solid #d9d9d9;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.about_button::after {
+    content: "";
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .about_button:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
