@@ -35,7 +35,8 @@ const Slideshow = () => {
     setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+          prevIndex === images.length
+          ? 0 : prevIndex + 1
         ),
       delay
     );

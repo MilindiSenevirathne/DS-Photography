@@ -1,4 +1,4 @@
-import Slideshow from "../Components/SlideShow";
+import Slideshow from "../../Components/SlideShow";
 import "./Home.css";
 import Image from "../Assets/camera.png";
 import Facebook from "../Assets/facebook.png";
