@@ -1,4 +1,5 @@
 import Slideshow from "../Components/SlideShow";
+import { useState, useEffect } from "react";
 import "../Pages/Home.css";
 import Image from "../Assets/camera.png";
 import Facebook from "../Assets/facebook.png";
@@ -6,8 +7,44 @@ import Instagram from "../Assets/instagram (1).png";
 import Image2 from "../Assets/Disal.jpg";
 import Wedding from "../Assets/Home/H3.jpg";
 import Wedding2 from "../Assets/Home/H6.jpg";
+import mixitup from 'mixitup'
+import Image3 from "../Assets/Home/H3.jpg";
+import Image4 from "../Assets/Home/H4.jpg";
+import Image5 from "../Assets/Home/H5.jpg";
+import Image6 from "../Assets/Home/H6.jpg";
+import Image7 from "../Assets/Home/H7.jpg";
+import Image8 from "../Assets/Home/H8.jpg";
+import Image9 from "../Assets/Home/H9.jpg";
+import Image10 from "../Assets/Home/H10.jpg";
+import Image11 from "../Assets/Home/H11.jpg";
+import Movie from "../Components/Movie";
 
 const Home = () => {
+
+  const [popular, setPopular] = useState([]);
+
+  useEffect(()=>{
+    fetchPopular();
+  },[]);
+
+  const fetchPopular = async ()=>{
+    const images = [
+      //   { id: 1, src: Image1, title: "foo", description: "bar" },
+        { id: 2, src: Image2, title: "foo", description: "bar" },
+        { id: 3, src: Image3, title: "foo", description: "bar" },
+        { id: 4, src: Image4, title: "foo", description: "bar" },
+        { id: 5, src: Image5, title: "foo", description: "bar" },
+        { id: 6, src: Image6, title: "foo", description: "bar" },
+        { id: 7, src: Image7, title: "foo", description: "bar" },
+        { id: 8, src: Image8, title: "foo", description: "bar" },
+        { id: 9, src: Image9, title: "foo", description: "bar" },
+        { id: 10, src: Image10, title: "foo", description: "bar" },
+        { id: 11, src: Image11, title: "foo", description: "bar" },
+      ];
+
+     console.log(images)
+      setPopular(images)
+  }
   return (
     <div>
       <div>
@@ -200,37 +237,26 @@ const Home = () => {
         </div>
       </div>
 
-      <section class="portfolio section bd-container" id="portfolio">
-        <h1 class="about">Favorite Captures</h1>
-        <h6 class="about_name">BEST-LOVED</h6>
-
-        <div class="portfolio__nav">
-          <span class="portfolio__item" data-filter="all">All</span>
-          <span class="portfolio__item" data-filter=".web">Web</span>
-          <span class="portfolio__item" data-filter=".ux">Ui/Ux</span>
-          <span class="portfolio__item" data-filter=".blog">Blog</span>
-        </div>
-
-        <div class="portfolios__container bd-grid">
-          <div class="portfolio__content mix ux">
-            <a href="https://www.figma.com/file/0UQAyOxjbKhF1hrW0iIBMF/IDOC"
-              ><img src="assets/img/dms_ui.png" class="portfolio__img" alt=""
-            /></a>
-            <div class="portfolio__data">
-              <a href="https://www.figma.com/file/0UQAyOxjbKhF1hrW0iIBMF/IDOC"
-                ><span class="portfolio__subtitle"
-                  >Document Management System</span
-                ></a
-              >
-
-              <h2 class="portfolio__title">
-                This a document management system interface that I implemented
-                to our second year software project.
-              </h2>
-            </div>
+      <div className="mt-4">
+        <h1 className="about">About Me</h1>
+        <h6 className="about_name">Disal Senevirathne</h6>
+        <div>
+        <div>
+            <h4 className="desc_2" style={{ textAlign: "center" }}>
+              PassionArt wedding photography sri lanka seek to portray all
+              brides & bridegrooms in their own natural style<br></br> and we
+              make the photos to be expressions of their natural charm. Blending
+              that style with our creativeness<br></br> we strive to make their
+              wedding day photos to be really awesome.
+            </h4>
+          </div>
+          <div className="popular-movies">
+            {popular.map(image =>{
+              return <Movie key={image.id} image={image}/>;
+            })}
           </div>
         </div>
-      </section>
+      </div>
 
     </div>
   );
