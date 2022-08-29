@@ -35,8 +35,8 @@ function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
         Modern
       </a>
       <a
-        className={activeGenre === 3 ? "active" : ""}
-        onClick={() => setActiveGenre(3)}
+        className={activeGenre === 4 ? "active" : ""}
+        onClick={() => setActiveGenre(4)}
       >
         Love
       </a>
