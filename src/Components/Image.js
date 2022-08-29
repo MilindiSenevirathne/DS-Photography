@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-function Movie({ image }) {
+function ImageComponent({ image }) {
   return (
     <motion.div
       layout
@@ -13,4 +13,4 @@ function Movie({ image }) {
   );
 }
 
-export default Movie;
+export default ImageComponent;

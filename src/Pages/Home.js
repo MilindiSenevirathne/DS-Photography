@@ -17,7 +17,7 @@ import Image8 from "../Assets/Home/H8.jpg";
 import Image9 from "../Assets/Home/H9.jpg";
 import Image10 from "../Assets/Home/H10.jpg";
 import Image11 from "../Assets/Home/H11.jpg";
-import Movie from "../Components/Movie";
+import ImageComponent from "../Components/Image";
 import Filter from "../Components/Filter";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -319,14 +319,11 @@ const Home = () => {
             activeGenre={activeGenre}
             setActiveGenre={setActiveGenre}
           />
-          <motion.div
-            layout
-            className="popular-movies"
-          >
-            <AnimatePresence> 
-            {filtered.map((image) => {
-              return <Movie key={image.id} image={image} />;
-            })}
+          <motion.div layout className="popular-images">
+            <AnimatePresence>
+              {filtered.map((image) => {
+                return <ImageComponent key={image.id} image={image} />;
+              })}
             </AnimatePresence>
           </motion.div>
         </div>
