@@ -319,6 +319,7 @@ const Home = () => {
               activeGenre={activeGenre}
               setActiveGenre={setActiveGenre}
             />
+            <div className="mt-4"></div>
             <motion.div layout className="popular-images">
               <AnimatePresence>
                 {filtered.map((image) => {
