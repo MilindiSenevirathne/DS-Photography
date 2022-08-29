@@ -7,8 +7,14 @@ import Instagram from "../Assets/instagram (1).png";
 import Image2 from "../Assets/Disal.jpg";
 import Wedding from "../Assets/Home/H3.jpg";
 import Wedding2 from "../Assets/Home/H6.jpg";
+import SimpleImageSlider from "react-simple-image-slider";
+import S1 from "../Assets/3.jpg";
+import S2 from "../Assets/4.jpg";
+import S3 from "../Assets/5.jpg";
 
 const Home = () => {
+  const images = [{ url: S1 }, { url: S2 }, { url: S3 }];
+
   return (
     <div>
       <div>
@@ -206,11 +212,12 @@ const Home = () => {
         <h6 className="about_name">BEST-LOVED</h6>
         <div className="">
           <div>
-            <h4 className="desc_2" style={{textAlign:"center"}}>
-            Passing wondrous moments may not come with the same glow again. 
-            But we freeze them in beautiful <br></br> photographs to be viewed and 
-            reviewed to ones heart’s content. And that is the work we love <br></br>
-            most – just taking pretty pictures.
+            <h4 className="desc_2" style={{ textAlign: "center" }}>
+              Passing wondrous moments may not come with the same glow again.
+              But we freeze them in beautiful <br></br> photographs to be viewed
+              and reviewed to ones heart’s content. And that is the work we love{" "}
+              <br></br>
+              most – just taking pretty pictures.
             </h4>
           </div>
           <div>
@@ -276,9 +283,30 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-
-
+      <div className="mt-4">
+        <h1 className="about">My Works</h1>
+        <h6 className="about_name">Work Types</h6>
+        <div>
+          <h4 className="desc_2" style={{ textAlign: "center" }}>
+            PassionArt wedding photography sri lanka seek to portray all brides
+            & bridegrooms in their own natural style<br></br> and we make the
+            photos to be expressions of their natural charm. Blending that style
+            with our creativeness<br></br> we strive to make their wedding day
+            photos to be really awesome.
+          </h4>
+        </div>
+        <div className="d-flex justify-content-center">
+          <SimpleImageSlider
+            width={896}
+            height={504}
+            images={images}
+            showBullets={true}
+            showNavs={true}
+            autoPlay={true}
+            autoPlayDelay={15.0}
+          />
+        </div>
+      </div>
     </div>
   );
 };

@@ -245,9 +245,8 @@
 }
 
 .work_type {
->>>>>>> 047b60cbfbf313f09c3f53a95031896cd5eb3720
   font-family: "Alegreya Sans SC", sans-serif;
-  font-family: "Petit Formal Script", cursive;
+  /* font-family: "Petit Formal Script", cursive; */
   /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
   position: absolute;
@@ -344,7 +343,7 @@
     margin-left: 17rem;
     margin-right: 17rem;
   }
-}
+
 
 .work_div5 {
   position: relative;
