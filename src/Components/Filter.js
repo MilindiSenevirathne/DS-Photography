@@ -14,9 +14,9 @@ function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
  
   return (
     <div className="filter-container">
-      <button onClick={() => setActiveGenre(0)}>All</button>
-      <button onClick={() => setActiveGenre(1)}>Comedy</button>
-      <button onClick={() => setActiveGenre(2)}>Action</button>
+      <button className={activeGenre === 0 ? "active" : ""} onClick={() => setActiveGenre(0)}>All</button>
+      <button className={activeGenre === 1 ? "active" : ""} onClick={() => setActiveGenre(1)}>Comedy</button>
+      <button className={activeGenre === 2 ? "active" : ""} onClick={() => setActiveGenre(2)}>Action</button>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import Instagram from "../Assets/instagram (1).png";
 import Image2 from "../Assets/Disal.jpg";
 import Wedding from "../Assets/Home/H3.jpg";
 import Wedding2 from "../Assets/Home/H6.jpg";
-import mixitup from 'mixitup'
+import mixitup from "mixitup";
 import Image3 from "../Assets/Home/H3.jpg";
 import Image4 from "../Assets/Home/H4.jpg";
 import Image5 from "../Assets/Home/H5.jpg";
@@ -19,37 +19,95 @@ import Image10 from "../Assets/Home/H10.jpg";
 import Image11 from "../Assets/Home/H11.jpg";
 import Movie from "../Components/Movie";
 import Filter from "../Components/Filter";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Home = () => {
-
   const [popular, setPopular] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [activeGenre, setActiveGenre] = useState(0);
 
-
-  useEffect(()=>{
+  useEffect(() => {
     fetchPopular();
-  },[]);
+  }, []);
 
-  const fetchPopular = async ()=>{
+  const fetchPopular = async () => {
     const images = [
       //   { id: 1, src: Image1, title: "foo", description: "bar" },
-        { id: 2, src: Image2, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 3, src: Image3, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 4, src: Image4, title: "foo", description: "bar", genre_ids:[2,25,120] },
-        { id: 5, src: Image5, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 6, src: Image6, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 7, src: Image7, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 8, src: Image8, title: "foo", description: "bar", genre_ids:[2,25,120] },
-        { id: 9, src: Image9, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 10, src: Image10, title: "foo", description: "bar", genre_ids:[1,25,120] },
-        { id: 11, src: Image11, title: "foo", description: "bar", genre_ids:[2,25,120] } ,
-      ];
+      {
+        id: 2,
+        src: Image2,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 3,
+        src: Image3,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 4,
+        src: Image4,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 5,
+        src: Image5,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 6,
+        src: Image6,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 7,
+        src: Image7,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 8,
+        src: Image8,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 9,
+        src: Image9,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 10,
+        src: Image10,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 11,
+        src: Image11,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+    ];
 
-     console.log(filtered)
-      setPopular(images)
-      setFiltered(images)
-  }
+    setPopular(images);
+    setFiltered(images);
+  };
   return (
     <div>
       <div>
@@ -246,7 +304,7 @@ const Home = () => {
         <h1 className="about">About Me</h1>
         <h6 className="about_name">Disal Senevirathne</h6>
         <div>
-        <div>
+          <div>
             <h4 className="desc_2" style={{ textAlign: "center" }}>
               PassionArt wedding photography sri lanka seek to portray all
               brides & bridegrooms in their own natural style<br></br> and we
@@ -255,15 +313,24 @@ const Home = () => {
               wedding day photos to be really awesome.
             </h4>
           </div>
-          <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre}/>
-          <div className="popular-movies">
-            {filtered.map(image =>{
-              return <Movie key={image.id} image={image}/>;
+          <Filter
+            popular={popular}
+            setFiltered={setFiltered}
+            activeGenre={activeGenre}
+            setActiveGenre={setActiveGenre}
+          />
+          <motion.div
+            layout
+            className="popular-movies"
+          >
+            <AnimatePresence> 
+            {filtered.map((image) => {
+              return <Movie key={image.id} image={image} />;
             })}
-          </div>
+            </AnimatePresence>
+          </motion.div>
         </div>
       </div>
-
     </div>
   );
 };
