@@ -20,6 +20,25 @@ import Image11 from "../Assets/Home/H11.jpg";
 import ImageComponent from "../Components/Image";
 import Filter from "../Components/Filter";
 import { motion, AnimatePresence } from "framer-motion";
+import A1 from "../Assets/Home/Favourite/A1.jpg";
+import A2 from "../Assets/Home/Favourite/A2.jpg";
+import A3 from "../Assets/Home/Favourite/A3.jpg";
+import A4 from "../Assets/Home/Favourite/A4.jpg";
+import A5 from "../Assets/Home/Favourite/A5.jpg";
+import A6 from "../Assets/Home/Favourite/A6.jpg";
+import A8 from "../Assets/Home/Favourite/A8.jpg";
+import A9 from "../Assets/Home/Favourite/A9.jpg";
+import N1 from "../Assets/Home/Favourite/N1.jpg";
+import N2 from "../Assets/Home/Favourite/N2.jpg";
+import N3 from "../Assets/Home/Favourite/N3.jpg";
+import N4 from "../Assets/Home/Favourite/N4.jpg";
+import N5 from "../Assets/Home/Favourite/N5.jpg";
+import N6 from "../Assets/Home/Favourite/N6.jpg";
+import N8 from "../Assets/Home/Favourite/N8.jpg";
+import N9 from "../Assets/Home/Favourite/N9.jpg";
+import L1 from "../Assets/Home/Favourite/L1.jpg";
+import L2 from "../Assets/Home/Favourite/L2.jpg";
+
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -38,14 +57,14 @@ const Home = () => {
         src: Image2,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 3,
         src: Image3,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 4,
@@ -59,21 +78,21 @@ const Home = () => {
         src: Image5,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 6,
         src: Image6,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 7,
         src: Image7,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 8,
@@ -87,27 +106,158 @@ const Home = () => {
         src: Image9,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 10,
         src: Image10,
         title: "foo",
         description: "bar",
-        genre_ids: [1, 25, 120],
+        // genre_ids: [1, 25, 120],
       },
       {
         id: 11,
         src: Image11,
         title: "foo",
         description: "bar",
-        genre_ids: [2, 25, 120],
+        // genre_ids: [2, 25, 120],
       },
     ];
 
-    setPopular(images);
-    setFiltered(images);
+    const favorite = [
+      //   { id: 1, src: Image1, title: "foo", description: "bar" },
+      {
+        id: 2,
+        src: A1,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 3,
+        src: A2,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 4,
+        src: A3,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 5,
+        src: A4,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 6,
+        src: A5,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 7,
+        src: A6,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 8,
+        src: A8,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 9,
+        src: A9,
+        title: "foo",
+        description: "bar",
+        genre_ids: [1, 25, 120],
+      },
+      {
+        id: 10,
+        src: N1,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 11,
+        src: N2,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 12,
+        src: N3,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 13,
+        src: N4,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 14,
+        src: N5,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 15,
+        src: N6,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 16,
+        src: N8,
+        title: "foo",
+        description: "bar",
+        genre_ids: [2, 25, 120],
+      },
+      {
+        id: 17,
+        src: N9,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 18,
+        src: L1,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 19,
+        src: L2,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+    ];
+
+    setPopular(favorite);
+    setFiltered(favorite);
   };
+
   return (
     <div>
       <div>
