@@ -301,31 +301,32 @@ const Home = () => {
       </div>
 
       <div className="mt-4">
-        <h1 className="about">About Me</h1>
-        <h6 className="about_name">Disal Senevirathne</h6>
+        <h1 className="about">Favorite Captures</h1>
+        <h6 className="about_name">BEST-LOVE</h6>
         <div>
           <div>
             <h4 className="desc_2" style={{ textAlign: "center" }}>
-              PassionArt wedding photography sri lanka seek to portray all
-              brides & bridegrooms in their own natural style<br></br> and we
-              make the photos to be expressions of their natural charm. Blending
-              that style with our creativeness<br></br> we strive to make their
-              wedding day photos to be really awesome.
+              Passing wondrous moments may not come with the same glow again.
+              But we freeze them in beautiful <br></br> photographs to be viewed
+              and reviewed to ones heart’s content. And that is the work we love{" "}
+              <br></br> most – just taking pretty pictures.
             </h4>
           </div>
-          <Filter
-            popular={popular}
-            setFiltered={setFiltered}
-            activeGenre={activeGenre}
-            setActiveGenre={setActiveGenre}
-          />
-          <motion.div layout className="popular-images">
-            <AnimatePresence>
-              {filtered.map((image) => {
-                return <ImageComponent key={image.id} image={image} />;
-              })}
-            </AnimatePresence>
-          </motion.div>
+          <div className="mt-4">
+            <Filter
+              popular={popular}
+              setFiltered={setFiltered}
+              activeGenre={activeGenre}
+              setActiveGenre={setActiveGenre}
+            />
+            <motion.div layout className="popular-images">
+              <AnimatePresence>
+                {filtered.map((image) => {
+                  return <ImageComponent key={image.id} image={image} />;
+                })}
+              </AnimatePresence>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
