@@ -1,13 +1,24 @@
 import { useEffect } from "react";
 
-function Filter({setActiveGenre, activeGenre, setFiltered, popular}){
-    return(
-        <div className="filter-container">
-            <button onClick={()=>setActiveGenre(0)}>All</button>
-            <button onClick={()=>setActiveGenre(1)}>Comedy</button>
-            <button onClick={()=>setActiveGenre(2)}>Action</button>
-        </div>
-    )
+function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
+  useEffect(() => {
+    if (activeGenre === 0) {
+      setFiltered(popular);
+      return;
+    }
+    const filtered = popular.filter((image) => image.genre_ids.includes(activeGenre));
+    setFiltered(filtered);
+  }, [activeGenre]);
+
+  console.log(activeGenre)
+ 
+  return (
+    <div className="filter-container">
+      <button onClick={() => setActiveGenre(0)}>All</button>
+      <button onClick={() => setActiveGenre(1)}>Comedy</button>
+      <button onClick={() => setActiveGenre(2)}>Action</button>
+    </div>
+  );
 }
 
 export default Filter;

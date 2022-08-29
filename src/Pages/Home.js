@@ -34,19 +34,19 @@ const Home = () => {
   const fetchPopular = async ()=>{
     const images = [
       //   { id: 1, src: Image1, title: "foo", description: "bar" },
-        { id: 2, src: Image2, title: "foo", description: "bar", genre_ids:1 },
-        { id: 3, src: Image3, title: "foo", description: "bar", genre_ids:1  },
-        { id: 4, src: Image4, title: "foo", description: "bar", genre_ids:2  },
-        { id: 5, src: Image5, title: "foo", description: "bar", genre_ids:1  },
-        { id: 6, src: Image6, title: "foo", description: "bar", genre_ids:1  },
-        { id: 7, src: Image7, title: "foo", description: "bar", genre_ids:1  },
-        { id: 8, src: Image8, title: "foo", description: "bar", genre_ids:2  },
-        { id: 9, src: Image9, title: "foo", description: "bar", genre_ids:1  },
-        { id: 10, src: Image10, title: "foo", description: "bar", genre_ids:1  },
-        { id: 11, src: Image11, title: "foo", description: "bar", genre_ids:2  },
+        { id: 2, src: Image2, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 3, src: Image3, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 4, src: Image4, title: "foo", description: "bar", genre_ids:[2,25,120] },
+        { id: 5, src: Image5, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 6, src: Image6, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 7, src: Image7, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 8, src: Image8, title: "foo", description: "bar", genre_ids:[2,25,120] },
+        { id: 9, src: Image9, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 10, src: Image10, title: "foo", description: "bar", genre_ids:[1,25,120] },
+        { id: 11, src: Image11, title: "foo", description: "bar", genre_ids:[2,25,120] } ,
       ];
 
-     console.log(images)
+     console.log(filtered)
       setPopular(images)
       setFiltered(images)
   }
@@ -257,7 +257,7 @@ const Home = () => {
           </div>
           <Filter popular={popular} setFiltered={setFiltered} activeGenre={activeGenre} setActiveGenre={setActiveGenre}/>
           <div className="popular-movies">
-            {popular.map(image =>{
+            {filtered.map(image =>{
               return <Movie key={image.id} image={image}/>;
             })}
           </div>
