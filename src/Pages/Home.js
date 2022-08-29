@@ -284,8 +284,8 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-4">
-        <h1 className="about">My Works</h1>
-        <h6 className="about_name">Work Types</h6>
+        <h1 className="about">Clients' Experiences</h1>
+        <h6 className="about_name">Testimonial</h6>
         <div>
           <h4 className="desc_2" style={{ textAlign: "center" }}>
             PassionArt wedding photography sri lanka seek to portray all brides
