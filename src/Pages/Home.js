@@ -38,7 +38,10 @@ import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
 import L1 from "../Assets/Home/Favourite/L1.jpg";
 import L2 from "../Assets/Home/Favourite/L2.jpg";
-
+import SimpleImageSlider from "react-simple-image-slider";
+import C1 from "../Assets/3.jpg";
+import C2 from "../Assets/4.jpg";
+import C3 from "../Assets/5.jpg";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -258,6 +261,8 @@ const Home = () => {
     setFiltered(favorite);
   };
 
+  const image = [{ url: C1 }, { url: C2 }, { url: C3 }];
+
   return (
     <div>
       <div>
@@ -405,7 +410,7 @@ const Home = () => {
               wedding day photos to be really awesome.
             </h4>
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center works">
             <div className="work_div">
               <button className="btn btn-light btn-rounded work_button">
                 View Albums
@@ -414,14 +419,14 @@ const Home = () => {
                 Weddings
               </button>
             </div>
-            <div className="work_div2">
+            {/* <div className="me-2 work_div2">
               <button className="btn btn-light btn-rounded work_button">
                 View Albums
               </button>
               <button className="btn btn-warning btn-rounded work_type">
                 Homecomings
               </button>
-            </div>
+            </div> */}
             <div className="work_div3">
               <button className="btn btn-light btn-rounded work_button">
                 View Albums
@@ -478,6 +483,30 @@ const Home = () => {
               </AnimatePresence>
             </motion.div>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-4">
+        <h1 className="about">Clients' Experences</h1>
+        <h6 className="about_name">Testimonial</h6>
+        <div>
+          <div>
+            <h4 className="desc_2" style={{ textAlign: "center" }}>
+              Passing wondrous moments may not come with the same glow again.
+              But we freeze them in beautiful <br></br> photographs to be viewed
+              and reviewed to ones heart’s content. And that is the work we love{" "}
+              <br></br> most – just taking pretty pictures.
+            </h4>
+          </div>
+        </div>
+        <div className="d-flex justify-content-center">
+          <SimpleImageSlider
+            width={896}
+            height={504}
+            images={image}
+            showBullets={true}
+            showNavs={true}
+          />
         </div>
       </div>
     </div>

@@ -199,9 +199,9 @@
   color: black;
 }
 
-.work_img {
-  height: 450px;
-  filter: brightness(50%);
+.works{
+    margin: auto;
+    display: inline-block;
 }
 
 .work_div {
@@ -212,13 +212,14 @@
   height: 450px;
   background: url("../Assets/Home/H3.jpg") no-repeat;
   background-size: 300px 450px;
-  margin: 50px;
+  margin: auto;
   transition: ease-in-out 0.5s;
   /* filter: brightness(80%); */
+  display: inline-block;
 }
 
 .work_div:hover {
-  background: url("../Assets/Home/H6.jpg") no-repeat;
+  background: url("../Assets/Home/W1.jpg") no-repeat;
   background-size: 300px 450px;
   transition: ease-in-out 0.5s;
 }
@@ -266,9 +267,10 @@
     height: 450px;
     background: url("../Assets/Home/W1.jpg") no-repeat;
     background-size: 300px 450px;
-    margin: 50px;
+    margin: auto;
     transition: ease-in-out 0.5s;
     /* filter: brightness(80%); */
+    display: inline-block;
   }
   
   .work_div2:hover {
@@ -293,9 +295,10 @@
     height: 450px;
     background: url("../Assets/Home/H11.jpg") no-repeat;
     background-size: 300px 450px;
-    margin: 50px;
+    margin: auto;
     transition: ease-in-out 0.5s;
     /* filter: brightness(80%); */
+    display: inline-block;
   }
 
   .work_div3:hover {
@@ -320,9 +323,10 @@
     height: 450px;
     background: url("../Assets/Home/H7.jpg") no-repeat;
     background-size: 300px 450px;
-    margin: 50px;
+    margin: auto;
     transition: ease-in-out 0.5s;
     /* filter: brightness(80%); */
+    display: inline-block;
   }
 
   .work_div4:hover {
@@ -355,9 +359,10 @@
   height: 450px;
   background: url("../Assets/Home/W3.jpg") no-repeat;
   background-size: 300px 450px;
-  margin: 50px;
+  margin: auto;
   transition: ease-in-out 0.5s;
   /* filter: brightness(80%); */
+  display: inline-block;
 }
 
 .work_div5:hover {
