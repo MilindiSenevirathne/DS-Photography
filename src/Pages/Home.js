@@ -58,72 +58,43 @@ const Home = () => {
       {
         id: 2,
         src: Image2,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 3,
         src: Image3,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 4,
         src: Image4,
-        title: "foo",
-        description: "bar",
         genre_ids: [2, 25, 120],
       },
       {
         id: 5,
         src: Image5,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 6,
         src: Image6,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 7,
         src: Image7,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 8,
         src: Image8,
-        title: "foo",
-        description: "bar",
-        genre_ids: [2, 25, 120],
       },
       {
         id: 9,
         src: Image9,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 10,
         src: Image10,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [1, 25, 120],
       },
       {
         id: 11,
         src: Image11,
-        title: "foo",
-        description: "bar",
-        // genre_ids: [2, 25, 120],
       },
     ];
 
@@ -133,7 +104,6 @@ const Home = () => {
         id: 2,
         src: A1,
         title: "foo",
-        description: "bar",
         genre_ids: [1, 25, 120],
       },
       {
@@ -265,7 +235,8 @@ const Home = () => {
 
   return (
     <div>
-      <div>
+     <header>
+     <div className="header">
         <div
           className="d-flex justify-content-around navbar"
           style={{ boxShadow: "none" }}
@@ -274,40 +245,40 @@ const Home = () => {
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
-                  href="#"
+                  class="nav-link"
+                  href="#welcome"
                   style={{ color: "#bfbdbd" }}
                 >
                   WELCOME
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
+                <a class="nav-link" href="#about" style={{ color: "#bfbdbd" }}>
                   ABOUT ME
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
+                <a class="nav-link" href="#works" style={{ color: "#bfbdbd" }}>
                   MY WORKS
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
+                <a class="nav-link" href="#captures" style={{ color: "#bfbdbd" }}>
                   PORTFOLIO
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
+                <a class="nav-link" href="#contact" style={{ color: "#bfbdbd" }}>
                   CONTACT
                 </a>
               </li>
             </ul>
           </div>
           <div
-            class="d-flex justify-content-center line"
+            className="d-flex justify-content-center line"
             style={{ height: "150px" }}
           >
-            <div class="vr"></div>
+            <div className="vr"></div>
           </div>
 
           <div className="name_div">
@@ -338,8 +309,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+     </header>
 
-      <div>
+      <div className="content">
+      <div className="slides">
         <Slideshow />
       </div>
 
@@ -355,7 +328,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4 my_photography">
+      <div className="mt-4 my_photography" id="welcome">
         <div className="mt-4 box">
           <div className="d-flex justify-content-center box_2">
             <div className="box_3">
@@ -374,7 +347,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4" id="about">
         <h1 className="about">About Me</h1>
         <h6 className="about_name">Disal Senevirathne</h6>
         <div className="d-flex justify-content-center">
@@ -397,7 +370,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4" id="works">
         <h1 className="about">My Works</h1>
         <h6 className="about_name">Work Types</h6>
         <div className="">
@@ -410,7 +383,7 @@ const Home = () => {
               wedding day photos to be really awesome.
             </h4>
           </div>
-          <div className="d-flex justify-content-center works">
+          <div className="works">
             <div className="work_div">
               <button className="btn btn-light btn-rounded work_button">
                 View Albums
@@ -455,7 +428,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4" id="captures">
         <h1 className="about">Favorite Captures</h1>
         <h6 className="about_name">BEST-LOVE</h6>
         <div>
@@ -486,7 +459,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4" id="client">
         <h1 className="about">Clients' Experences</h1>
         <h6 className="about_name">Testimonial</h6>
         <div>
@@ -499,7 +472,7 @@ const Home = () => {
             </h4>
           </div>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center slider">
           <SimpleImageSlider
             width={896}
             height={504}
@@ -508,6 +481,7 @@ const Home = () => {
             showNavs={true}
           />
         </div>
+      </div>
       </div>
     </div>
   );
