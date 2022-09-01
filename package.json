@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.0",
     "framer-motion": "^7.2.1",
+    "google-maps-react": "^2.0.6",
     "mdb-react-ui-kit": "^4.1.0",
     "mixitup": "^3.3.1",
     "react": "^18.2.0",

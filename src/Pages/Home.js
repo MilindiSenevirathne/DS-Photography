@@ -41,6 +41,8 @@ import SimpleImageSlider from "react-simple-image-slider";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
+import {Map, GoogleApiWrapper} from 'google-maps-react';
+import Header from "../Components/Header";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -235,6 +237,7 @@ const Home = () => {
   return (
     <div>
      <header>
+        <Header />
      </header>
 
       <div className="content">
@@ -406,6 +409,10 @@ const Home = () => {
             showBullets={true}
             showNavs={true}
           />
+        </div>
+
+        <div className="d-flex justify-content-center mt-4">
+        <iframe style={{width:"35%", height:"400px", marginTop:"50px"}}  id="gmap_canvas" src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
       </div>
       </div>

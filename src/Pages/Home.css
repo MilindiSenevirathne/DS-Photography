@@ -423,6 +423,10 @@ a.active {
   font-weight: 600;
 }
 
+.gallery_img{
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 350px) {
   .nav-item {
     display: none;

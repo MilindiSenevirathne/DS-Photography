@@ -13,8 +13,8 @@ function App() {
         <Route path='/weddings' element={<Weddings/>}/>
    
     </BrowserRouter> */}
-    {/* <Home /> */}
-    <Weddings />
+    <Home />
+    {/* <Weddings /> */}
     </div>
   );
 }
