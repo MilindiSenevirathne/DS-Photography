@@ -1,5 +1,6 @@
 import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
+import Image from "../Assets/camera.png";
 
 const Header = () =>{
     return(

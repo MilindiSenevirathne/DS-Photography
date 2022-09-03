@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 // import ResponsiveGallery from 'react-responsive-gallery';
 import Image3 from "../Assets/Home/H3.jpg";
 import Image5 from "../Assets/Home/H5.jpg";
@@ -11,6 +10,7 @@ import Image10 from "../Assets/Home/H10.jpg";
 import Image11 from "../Assets/Home/H11.jpg";
 import DztImageGalleryComponent from "reactjs-image-gallery";
 import Header from "../Components/Header";
+import './Home.css'
 
 const images = [
     //   { id: 1, src: Image1, title: "foo", description: "bar" },
@@ -58,11 +58,13 @@ const images = [
 
 
 const Weddings = () => {
+
+
   return (
     <div>
         <Header/>
       <div>
-      <DztImageGalleryComponent images={images} imageBackgroundColor="white" hideDownload={true} />
+      <DztImageGalleryComponent images={images} imgClassName="gallery_img" hideDownload={true} imageBackgroundColor="#fff"/>
       </div>
     </div>
   );
