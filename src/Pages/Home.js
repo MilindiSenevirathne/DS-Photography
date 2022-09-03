@@ -36,7 +36,6 @@ import SimpleImageSlider from "react-simple-image-slider";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
-import {Map, GoogleApiWrapper} from 'google-maps-react';
 import Header from "../Components/Header";
 
 const Home = () => {

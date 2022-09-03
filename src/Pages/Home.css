@@ -281,7 +281,7 @@
 }
 
 .work_div2:hover {
-  background: url("../Assets/Home/H1.jpg") no-repeat;
+  background: url("../Assets/Home/H1.JPG") no-repeat;
   background-size: 300px 450px;
   transition: ease-in-out 0.5s;
 }
