@@ -204,6 +204,12 @@
   filter: brightness(50%);
 }
 
+.works {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .work_div {
   position: relative;
   text-align: center;
@@ -215,6 +221,7 @@
   margin: 50px;
   transition: ease-in-out 0.5s;
   /* filter: brightness(80%); */
+  display: inline-block;
 }
 
 .work_div:hover {
@@ -263,7 +270,12 @@
   color: rgb(144, 149, 149);
   width: 300px;
   height: 450px;
-  filter: brightness(50%);
+  background: url("../Assets/Home/W1.jpg") no-repeat;
+  background-size: 300px 450px;
+  margin: 50px;
+  transition: ease-in-out 0.5s;
+  /* filter: brightness(80%); */
+  display: inline-block;
 }
 
 @media screen and (min-width: 350px) {

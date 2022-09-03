@@ -1,13 +1,7 @@
 import Slideshow from "../Components/SlideShow";
 import { useState, useEffect } from "react";
 import "../Pages/Home.css";
-import Image from "../Assets/camera.png";
-import Facebook from "../Assets/facebook.png";
-import Instagram from "../Assets/instagram (1).png";
 import Image2 from "../Assets/Disal.jpg";
-import Wedding from "../Assets/Home/H3.jpg";
-import Wedding2 from "../Assets/Home/H6.jpg";
-import mixitup from "mixitup";
 import Image3 from "../Assets/Home/H3.jpg";
 import Image4 from "../Assets/Home/H4.jpg";
 import Image5 from "../Assets/Home/H5.jpg";
@@ -20,6 +14,7 @@ import Image11 from "../Assets/Home/H11.jpg";
 import ImageComponent from "../Components/Image";
 import Filter from "../Components/Filter";
 import { motion, AnimatePresence } from "framer-motion";
+import Header from "../Components/Header";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -110,80 +105,7 @@ const Home = () => {
   };
   return (
     <div>
-      <div>
-        <div
-          className="d-flex justify-content-around navbar"
-          style={{ boxShadow: "none" }}
-        >
-          <div className="nav_links">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="#"
-                  style={{ color: "#bfbdbd" }}
-                >
-                  WELCOME
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
-                  ABOUT ME
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
-                  MY WORKS
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
-                  PORTFOLIO
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" style={{ color: "#bfbdbd" }}>
-                  CONTACT
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="d-flex justify-content-center line"
-            style={{ height: "150px" }}
-          >
-            <div class="vr"></div>
-          </div>
-
-          <div className="name_div">
-            <img src={Image} alt="Snow" className="camera_img" />
-            <h1 className="name">DS Photography</h1>
-          </div>
-
-          <div
-            class="d-flex justify-content-center line"
-            style={{ height: "150px" }}
-          >
-            <div class="vr"></div>
-          </div>
-
-          <div>
-            <div className="desc1">
-              Best phogragraphs and <br />
-              give value for money.
-            </div>
-            <div className="icons">
-              <a href="facebook.com">
-                <img src={Facebook} className="me-2 fb" />
-              </a>
-              <a href="facebook.com">
-                <img src={Instagram} className="insta" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Header />
       <div>
         <Slideshow />
       </div>
