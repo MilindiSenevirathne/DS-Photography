@@ -409,9 +409,12 @@ const Home = () => {
         </div>
 
         <div className="mt-4">
+        <h1 className="about">Contact Me</h1>
+          <h6 className="about_name">Get in touch</h6>
           <div className="d-flex justify-content-center mt-4">
             <iframe
-              style={{ width: "35%", height: "400px", marginTop: "50px" }}
+            className="mt-3"
+              style={{ width: "35%", height: "400px", marginRight:"2rem" }}
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
@@ -419,7 +422,7 @@ const Home = () => {
               marginheight="0"
               marginwidth="0"
             ></iframe>
-            <div className="section mt-5">
+            <div className="section mt-3">
               <div class="contact__container container grid">
                 <form
                   action="https://formsubmit.co/milindianu@gmail.com"
