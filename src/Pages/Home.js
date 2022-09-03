@@ -409,12 +409,27 @@ const Home = () => {
         </div>
 
         <div className="mt-4">
-        <h1 className="about">Contact Me</h1>
+          <h1 className="about">Contact Me</h1>
           <h6 className="about_name">Get in touch</h6>
+
+          <div class="contact__contents bd-grid d-flex justify-content-center mt-4">
+            <div class="contact__box">
+              <i class="bx bx-home contact__icon"></i>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__description">Colombo, Sri Lanka</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__description">vihanpamudya12@gmail.com</span>
+            </div>
+          </div>
+
           <div className="d-flex justify-content-center mt-4">
             <iframe
-            className="mt-3"
-              style={{ width: "35%", height: "400px", marginRight:"2rem" }}
+              className="mt-3"
+              style={{ width: "35%", height: "400px", marginRight: "2rem" }}
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
@@ -456,7 +471,7 @@ const Home = () => {
                   </div>
                   <div class="contact__content">
                     <label for="" class="contact__label">
-                      Project
+                      Message
                     </label>
                     <textarea
                       name="message"

@@ -482,15 +482,15 @@ a.active {
 /*==================== BUTTONS ====================*/
 .button{
   display: inline-block;
-  background-color: green;
+  background-color: hsl(142, 69%, 61%);
   color: #FFF;
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 0.5rem;
   font-weight: 500;
 }
 
 .button:hover{
-  background-color: blue;
+  background-color: hsl(142, 57%, 53%);
 }
 
 .button__icon{
@@ -507,6 +507,29 @@ a.active {
 #submit__button{
   box-shadow: none;
   border: 0;
+}
+
+.contact__contents {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact__box {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgb(174 190 205 / 30%);
+  width: 25%;
+}
+
+.contact__title {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 350px) {
