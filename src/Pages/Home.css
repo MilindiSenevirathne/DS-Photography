@@ -603,9 +603,32 @@ a.active {
 
 }
 
+
 @media screen and (min-width: 1024px) {
   .contact__inputs {
     grid-template-columns: repeat(2,1fr);
 }
+
+@media screen and (max-width:767px){
+    .nav-item {
+        display: inline;
+      }
+      .name {
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+      }
+      .camera_img {
+        height: 55px;
+      }
+      .vr {
+        display: none;
+      }
+      .desc1 {
+       
+      }
+      .icons {
+        
+      }
 }
 
