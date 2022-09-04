@@ -26,7 +26,7 @@ function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
         className={activeGenre === 1 ? "active" : ""}
         onClick={() => setActiveGenre(1)}
       >
-        Candid
+        Nature
       </a>
       <a
         className={activeGenre === 2 ? "active" : ""}
@@ -35,8 +35,8 @@ function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
         Modern
       </a>
       <a
-        className={activeGenre === 4 ? "active" : ""}
-        onClick={() => setActiveGenre(4)}
+        className={activeGenre === 3 ? "active" : ""}
+        onClick={() => setActiveGenre(3)}
       >
         Love
       </a>

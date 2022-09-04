@@ -37,3 +37,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen  and (max-width:350px){
+  .vr{
+    display: none;
+}
+}
+
+
