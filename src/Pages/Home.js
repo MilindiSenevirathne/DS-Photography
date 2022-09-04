@@ -1,21 +1,7 @@
 import Slideshow from "../Components/SlideShow";
 import { useState, useEffect } from "react";
 import "../Pages/Home.css";
-import Image from "../Assets/camera.png";
-
 import Image2 from "../Assets/Disal.jpg";
-import Wedding from "../Assets/Home/H3.jpg";
-import Wedding2 from "../Assets/Home/H6.jpg";
-import mixitup from "mixitup";
-import Image3 from "../Assets/Home/H3.jpg";
-import Image4 from "../Assets/Home/H4.jpg";
-import Image5 from "../Assets/Home/H5.jpg";
-import Image6 from "../Assets/Home/H6.jpg";
-import Image7 from "../Assets/Home/H7.jpg";
-import Image8 from "../Assets/Home/H8.jpg";
-import Image9 from "../Assets/Home/H9.jpg";
-import Image10 from "../Assets/Home/H10.jpg";
-import Image11 from "../Assets/Home/H11.jpg";
 import ImageComponent from "../Components/Image";
 import Filter from "../Components/Filter";
 import { motion, AnimatePresence } from "framer-motion";
@@ -41,7 +27,6 @@ import SimpleImageSlider from "react-simple-image-slider";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
-import { Map, GoogleApiWrapper } from "google-maps-react";
 import Header from "../Components/Header";
 
 const Home = () => {
@@ -54,53 +39,7 @@ const Home = () => {
   }, []);
 
   const fetchPopular = async () => {
-    const images = [
-      //   { id: 1, src: Image1, title: "foo", description: "bar" },
-      {
-        id: 2,
-        src: Image2,
-      },
-      {
-        id: 3,
-        src: Image3,
-      },
-      {
-        id: 4,
-        src: Image4,
-        genre_ids: [2, 25, 120],
-      },
-      {
-        id: 5,
-        src: Image5,
-      },
-      {
-        id: 6,
-        src: Image6,
-      },
-      {
-        id: 7,
-        src: Image7,
-      },
-      {
-        id: 8,
-        src: Image8,
-      },
-      {
-        id: 9,
-        src: Image9,
-      },
-      {
-        id: 10,
-        src: Image10,
-      },
-      {
-        id: 11,
-        src: Image11,
-      },
-    ];
-
     const favorite = [
-      //   { id: 1, src: Image1, title: "foo", description: "bar" },
       {
         id: 2,
         src: A1,
@@ -210,7 +149,7 @@ const Home = () => {
         src: N9,
         title: "foo",
         description: "bar",
-        genre_ids: [3, 25, 120],
+        genre_ids: [2, 25, 120],
       },
       {
         id: 18,
@@ -412,18 +351,103 @@ const Home = () => {
               showNavs={true}
             />
           </div>
+        </div>
+
+        <div className="mt-4">
+          <h1 className="about">Contact Me</h1>
+          <h6 className="about_name">Get in touch</h6>
+
+          <div class="contact__contents bd-grid d-flex justify-content-center mt-4">
+            <div class="contact__box">
+              <i class="bx bx-home contact__icon"></i>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__description">Panadura, Sri Lanka</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-envelope contact__icon"></i>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__description">disalgeelaka2@gmail.com</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+94 714036058</span>
+            </div>
+          </div>
 
           <div className="d-flex justify-content-center mt-4">
             <iframe
-              style={{ width: "35%", height: "400px", marginTop: "50px" }}
+              className="mt-3"
+              style={{ width: "35%", height: "400px", marginRight: "2rem" }}
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
               marginheight="0"
               marginwidth="0"
+              title=" Location"
             ></iframe>
+            <div className="section mt-3">
+              <div class="contact__container container grid">
+                <form
+                  action="https://formsubmit.co/milindianu@gmail.com"
+                  method="POST"
+                  class="contact__form grid"
+                >
+                  <input
+                    type="hidden"
+                    name="_template"
+                    value="Email from Portfolio"
+                  />
+                  <div class="contact__inputs grid">
+                    <div class="contact__content">
+                      <label for="" class="contact__label">
+                        Name
+                      </label>
+                      <input type="text" name="name" class="contact__input" />
+                    </div>
+                    <div class="contact__content">
+                      <label for="" class="contact__label">
+                        Email
+                      </label>
+                      <input type="email" name="email" class="contact__input" />
+                    </div>
+                  </div>
+                  <div class="contact__content">
+                    <label for="" class="contact__label">
+                      Project
+                    </label>
+                    <input type="text" name="project" class="contact__input" />
+                  </div>
+                  <div class="contact__content">
+                    <label for="" class="contact__label">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      id=""
+                      cols="0"
+                      rows="7"
+                      class="contact__input"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <button
+                      type="submit"
+                      class="button button--flex"
+                      id="submit__button"
+                    >
+                      Send Message
+                      <i class="uil uil-message button__icon"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </div>

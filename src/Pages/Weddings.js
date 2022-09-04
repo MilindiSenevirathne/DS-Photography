@@ -1,9 +1,6 @@
 import React from "react";
-import { render } from "react-dom";
 // import ResponsiveGallery from 'react-responsive-gallery';
-import Gallery from 'react-photo-gallery';
 import Image3 from "../Assets/Home/H3.jpg";
-import Image4 from "../Assets/Home/H4.jpg";
 import Image5 from "../Assets/Home/H5.jpg";
 import Image6 from "../Assets/Home/H6.jpg";
 import Image7 from "../Assets/Home/H7.jpg";

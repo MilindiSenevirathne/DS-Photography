@@ -1,7 +1,6 @@
 
 import './App.css';
 import Home from './Pages/Home';
-import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
 import Weddings from './Pages/Weddings';
 
 function App() {
