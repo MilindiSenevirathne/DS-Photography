@@ -149,7 +149,7 @@ const Home = () => {
         src: N9,
         title: "foo",
         description: "bar",
-        genre_ids: [3, 25, 120],
+        genre_ids: [2, 25, 120],
       },
       {
         id: 18,
