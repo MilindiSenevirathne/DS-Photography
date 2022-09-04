@@ -2,10 +2,6 @@ import { useEffect } from "react";
 
 function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
   useEffect(() => {
-    if (activeGenre === 0) {
-      setFiltered(popular);
-      return;
-    }
     const filtered = popular.filter((image) =>
       image.genre_ids.includes(activeGenre)
     );
@@ -17,26 +13,26 @@ function Filter({ setActiveGenre, activeGenre, setFiltered, popular }) {
   return (
     <div className="filter-container">
       <a
-        className={activeGenre === 0 ? "active" : ""}
-        onClick={() => setActiveGenre(0)}
-      >
-        Fine Art
-      </a>
-      <a
         className={activeGenre === 1 ? "active" : ""}
         onClick={() => setActiveGenre(1)}
       >
-        Nature
+        Fine Art
       </a>
       <a
         className={activeGenre === 2 ? "active" : ""}
         onClick={() => setActiveGenre(2)}
       >
-        Modern
+        Nature
       </a>
       <a
         className={activeGenre === 3 ? "active" : ""}
         onClick={() => setActiveGenre(3)}
+      >
+        Modern
+      </a>
+      <a
+        className={activeGenre === 4 ? "active" : ""}
+        onClick={() => setActiveGenre(4)}
       >
         Love
       </a>

@@ -16,18 +16,25 @@ import A9 from "../Assets/Home/Favourite/A9.jpg";
 import N1 from "../Assets/Home/Favourite/N1.jpg";
 import N2 from "../Assets/Home/Favourite/N2.jpg";
 import N3 from "../Assets/Home/Favourite/N3.jpg";
-import N4 from "../Assets/Home/Favourite/N4.jpg";
-import N5 from "../Assets/Home/Favourite/N5.jpg";
+import N4 from "../Assets/Home/Favourite/N4.JPG";
+import N5 from "../Assets/Home/Favourite/N5.JPG";
 import N6 from "../Assets/Home/Favourite/N6.jpg";
 import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
 import L1 from "../Assets/Home/Favourite/L1.jpg";
 import L2 from "../Assets/Home/Favourite/L2.jpg";
-import SimpleImageSlider from "react-simple-image-slider";
+import S2 from "../Assets/Home/Favourite/S2.JPG";
+import S3 from "../Assets/Home/Favourite/S3.jpg";
+import S4 from "../Assets/Home/Favourite/S4.JPG";
+import S5 from "../Assets/Home/Favourite/S5.JPG";
+import S6 from "../Assets/Home/Favourite/S6.JPG";
+import S7 from "../Assets/Home/Favourite/S7.JPG";
+import S8 from "../Assets/Home/Favourite/S8.JPG";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
 import Header from "../Components/Header";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -156,15 +163,64 @@ const Home = () => {
         src: L1,
         title: "foo",
         description: "bar",
-        genre_ids: [3, 25, 120],
+        genre_ids: [4, 25, 120],
       },
       {
         id: 19,
         src: L2,
         title: "foo",
         description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 20,
+        src: S2,
+        title: "foo",
+        description: "bar",
         genre_ids: [3, 25, 120],
       },
+      {
+        id: 21,
+        src: S3,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 22,
+        src: S4,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 23,
+        src: S5,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 24,
+        src: S6,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 25,
+        src: S7,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      },
+      {
+        id: 26,
+        src: S8,
+        title: "foo",
+        description: "bar",
+        genre_ids: [3, 25, 120],
+      }
     ];
 
     setPopular(favorite);
@@ -447,6 +503,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
