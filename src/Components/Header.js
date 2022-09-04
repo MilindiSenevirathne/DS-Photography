@@ -69,10 +69,10 @@ const Header = () =>{
             </div>
             <div className="icons">
               <a href="facebook.com">
-                <img src={Facebook} className="me-2 fb" />
+                <img src={Facebook} className="me-2 fb" alt="img"/>
               </a>
               <a href="facebook.com">
-                <img src={Instagram} className="insta" />
+                <img src={Instagram} className="insta" alt="img"/>
               </a>
             </div>
           </div>
