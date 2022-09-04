@@ -416,13 +416,19 @@ const Home = () => {
             <div class="contact__box">
               <i class="bx bx-home contact__icon"></i>
               <h3 class="contact__title">Location</h3>
-              <span class="contact__description">Colombo, Sri Lanka</span>
+              <span class="contact__description">Panadura, Sri Lanka</span>
             </div>
 
             <div class="contact__box">
               <i class="bx bx-envelope contact__icon"></i>
               <h3 class="contact__title">Email</h3>
-              <span class="contact__description">vihanpamudya12@gmail.com</span>
+              <span class="contact__description">disalgeelaka2@gmail.com</span>
+            </div>
+
+            <div class="contact__box">
+              <i class="bx bx-phone contact__icon"></i>
+              <h3 class="contact__title">Phone</h3>
+              <span class="contact__description">+94 714036058</span>
             </div>
           </div>
 
@@ -436,6 +442,7 @@ const Home = () => {
               scrolling="no"
               marginheight="0"
               marginwidth="0"
+              title=" Location"
             ></iframe>
             <div className="section mt-3">
               <div class="contact__container container grid">
