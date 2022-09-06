@@ -16,20 +16,20 @@ import A9 from "../Assets/Home/Favourite/A9.jpg";
 import N1 from "../Assets/Home/Favourite/N1.jpg";
 import N2 from "../Assets/Home/Favourite/N2.jpg";
 import N3 from "../Assets/Home/Favourite/N3.jpg";
-import N4 from "../Assets/Home/Favourite/N4.jpg";
-import N5 from "../Assets/Home/Favourite/N5.jpg";
+import N4 from "../Assets/Home/Favourite/N4.JPG";
+import N5 from "../Assets/Home/Favourite/N5.JPG";
 import N6 from "../Assets/Home/Favourite/N6.jpg";
 import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
 import L1 from "../Assets/Home/Favourite/L1.jpg";
 import L2 from "../Assets/Home/Favourite/L2.jpg";
-import S2 from "../Assets/Home/Favourite/S2.jpg";
+import S2 from "../Assets/Home/Favourite/S2.JPG";
 import S3 from "../Assets/Home/Favourite/S3.jpg";
-import S4 from "../Assets/Home/Favourite/S4.jpg";
-import S5 from "../Assets/Home/Favourite/S5.jpg";
-import S6 from "../Assets/Home/Favourite/S6.jpg";
-import S7 from "../Assets/Home/Favourite/S7.jpg";
-import S8 from "../Assets/Home/Favourite/S8.jpg";
+import S4 from "../Assets/Home/Favourite/S4.JPG";
+import S5 from "../Assets/Home/Favourite/S5.JPG";
+import S6 from "../Assets/Home/Favourite/S6.JPG";
+import S7 from "../Assets/Home/Favourite/S7.JPG";
+import S8 from "../Assets/Home/Favourite/S8.JPG";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
@@ -592,63 +592,64 @@ const Home = () => {
           </div>
         </section>
 
-        <div class="container pt-4">
-          <section class="mb-4">
+        <div class="d-flex justify-content-center">
+          <section>
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-facebook-f" style={{fontSize:"18px"}}></i>
             </a>
 
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-twitter" style={{fontSize:"18px"}}></i>
             </a>
 
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-google"></i>
+              <i class="fab fa-google" style={{fontSize:"18px"}}></i>
             </a>
 
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-instagram" style={{fontSize:"18px"}}></i>
             </a>
 
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-linkedin"></i>
+              <i class="fab fa-linkedin" style={{fontSize:"18px"}}></i>
             </a>
 
             <a
-              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              class="btn btn-floating btn-lg text-white m-1"
               href="#!"
               role="button"
               data-mdb-ripple-color="dark"
             >
-              <i class="fab fa-github"></i>
+              <i class="fab fa-github" style={{fontSize:"18px"}}></i>
             </a>
           </section>
         </div>
+
         <div class="text-center p-4">
           © 2021 Copyright:
           <a class="text-reset fw-bold" href="https://mdbootstrap.com/">
