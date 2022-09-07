@@ -5,6 +5,12 @@
   color: rgb(147, 144, 141);
 }
 
+.bd-container {
+  max-width: 1024px;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
 .name {
   font-family: "Alegreya Sans SC", sans-serif;
   font-family: "Petit Formal Script", cursive;
@@ -352,11 +358,6 @@
   display: inline;
 }
 
-.bd-container {
-  margin-left: 17rem;
-  margin-right: 17rem;
-}
-
 .work_div5 {
   position: relative;
   text-align: center;
@@ -606,10 +607,17 @@ a.active {
 }
 
 
+
 @media screen and (min-width: 1024px) {
   .contact__inputs {
     grid-template-columns: repeat(2,1fr);
   }
+
+  .bd-container {
+    margin-left: 17rem;
+    margin-right: 17rem;
+  }
+
 }
 
 @media screen and (max-width:767px){

@@ -16,20 +16,20 @@ import A9 from "../Assets/Home/Favourite/A9.jpg";
 import N1 from "../Assets/Home/Favourite/N1.jpg";
 import N2 from "../Assets/Home/Favourite/N2.jpg";
 import N3 from "../Assets/Home/Favourite/N3.jpg";
-import N4 from "../Assets/Home/Favourite/N4.jpg";
-import N5 from "../Assets/Home/Favourite/N5.jpg";
+import N4 from "../Assets/Home/Favourite/N4.JPG";
+import N5 from "../Assets/Home/Favourite/N5.JPG";
 import N6 from "../Assets/Home/Favourite/N6.jpg";
 import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
 import L1 from "../Assets/Home/Favourite/L1.jpg";
 import L2 from "../Assets/Home/Favourite/L2.jpg";
-import S2 from "../Assets/Home/Favourite/S2.jpg";
+import S2 from "../Assets/Home/Favourite/S2.JPG";
 import S3 from "../Assets/Home/Favourite/S3.jpg";
-import S4 from "../Assets/Home/Favourite/S4.jpg";
-import S5 from "../Assets/Home/Favourite/S5.jpg";
-import S6 from "../Assets/Home/Favourite/S6.jpg";
-import S7 from "../Assets/Home/Favourite/S7.jpg";
-import S8 from "../Assets/Home/Favourite/S8.jpg";
+import S4 from "../Assets/Home/Favourite/S4.JPG";
+import S5 from "../Assets/Home/Favourite/S5.JPG";
+import S6 from "../Assets/Home/Favourite/S6.JPG";
+import S7 from "../Assets/Home/Favourite/S7.JPG";
+import S8 from "../Assets/Home/Favourite/S8.JPG";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
@@ -220,7 +220,7 @@ const Home = () => {
         title: "foo",
         description: "bar",
         genre_ids: [3, 25, 120],
-      }
+      },
     ];
 
     setPopular(favorite);
@@ -503,9 +503,160 @@ const Home = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
+
+      <footer
+        class="text-center text-lg-start text-white mt-5"
+        style={{ backgroundColor: "#fcb323" }}
+      >
+        <section class="d-flex justify-content-lg-between"></section>
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-2"></i>Company name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Angular
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    React
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Vue
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Laravel
+                  </a>
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Pricing
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Settings
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Orders
+                  </a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">
+                    Help
+                  </a>
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p>
+                  <i class="fas fa-home me-2"></i> New York, NY 10012, US
+                </p>
+                <p>
+                  <i class="fas fa-envelope me-2"></i> info@example.com
+                </p>
+                <p>
+                  <i class="fas fa-phone me-2"></i> + 01 234 567 88
+                </p>
+                <p>
+                  <i class="fas fa-print me-2"></i> + 01 234 567 89
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="d-flex justify-content-center">
+          <section>
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-facebook-f" style={{fontSize:"18px"}}></i>
+            </a>
+
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-twitter" style={{fontSize:"18px"}}></i>
+            </a>
+
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-google" style={{fontSize:"18px"}}></i>
+            </a>
+
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-instagram" style={{fontSize:"18px"}}></i>
+            </a>
+
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-linkedin" style={{fontSize:"18px"}}></i>
+            </a>
+
+            <a
+              class="btn btn-floating btn-lg text-white m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+            >
+              <i class="fab fa-github" style={{fontSize:"18px"}}></i>
+            </a>
+          </section>
+        </div>
+
+        <div class="text-center p-4">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">
+            MDBootstrap.com
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
