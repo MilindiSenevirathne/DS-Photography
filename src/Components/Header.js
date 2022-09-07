@@ -68,10 +68,10 @@ const Header = () =>{
               give value for money.
             </div>
             <div className="icons">
-              <a href="facebook.com">
+              <a href="https://www.facebook.com/disalgeelaka">
                 <img src={Facebook} className="me-2 fb" />
               </a>
-              <a href="facebook.com">
+              <a href="https://www.instagram.com/disalsenavi/">
                 <img src={Instagram} className="insta" />
               </a>
             </div>

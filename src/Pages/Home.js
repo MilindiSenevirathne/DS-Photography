@@ -448,7 +448,7 @@ const Home = () => {
             <div className="section mt-3">
               <div class="contact__container container grid">
                 <form
-                  action="https://formsubmit.co/milindianu@gmail.com"
+                  action="https://formsubmit.co/disalgeelaka2@gmail.com"
                   method="POST"
                   class="contact__form grid"
                 >
@@ -473,7 +473,7 @@ const Home = () => {
                   </div>
                   <div class="contact__content">
                     <label for="" class="contact__label">
-                      Project
+                      Title
                     </label>
                     <input type="text" name="project" class="contact__input" />
                   </div>

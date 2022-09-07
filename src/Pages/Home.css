@@ -542,7 +542,7 @@ a.active {
   font-size: 1.125rem;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 390px) {
   .nav-item {
     display: none;
   }
