@@ -1,6 +1,6 @@
 import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
-import Image from "../Assets/camera.png";
+import Image from "../Assets/logo2.png";
 
 const Header = () =>{
     return(
@@ -52,7 +52,6 @@ const Header = () =>{
 
           <div className="name_div">
             <img src={Image} alt="Snow" className="camera_img" />
-            <h1 className="name">DS Photography</h1>
           </div>
 
           <div

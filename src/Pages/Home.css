@@ -30,8 +30,9 @@
 }
 
 .camera_img {
-  height: 100px;
-  opacity: 0.12;
+  height: 110px;
+  /* opacity: 0.12; */
+ 
 }
 
 .desc1 {
