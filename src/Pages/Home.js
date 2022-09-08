@@ -1,5 +1,8 @@
 import Slideshow from "../Components/SlideShow";
 import { useState, useEffect } from "react";
+import {
+    Link
+  } from "react-router-dom";
 import "../Pages/Home.css";
 import Image2 from "../Assets/Disal.jpg";
 import ImageComponent from "../Components/Image";
@@ -23,6 +26,12 @@ import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
 import L1 from "../Assets/Home/Favourite/L1.jpg";
 import L2 from "../Assets/Home/Favourite/L2.jpg";
+import L3 from "../Assets/Home/Favourite/L3.jpg";
+import L4 from "../Assets/Home/Favourite/L4.jpg";
+import L5 from "../Assets/Home/Favourite/L5.jpg";
+import L6 from "../Assets/Home/Favourite/L6.jpg";
+import L8 from "../Assets/Home/Favourite/L8.jpg";
+import L9 from "../Assets/Home/Favourite/L9.jpg";
 import S2 from "../Assets/Home/Favourite/S2.jpg";
 import S3 from "../Assets/Home/Favourite/S3.jpg";
 import S4 from "../Assets/Home/Favourite/S4.jpg";
@@ -35,6 +44,7 @@ import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
 import Header from "../Components/Header";
 import SimpleImageSlider from "react-simple-image-slider";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -173,6 +183,48 @@ const Home = () => {
         genre_ids: [4, 25, 120],
       },
       {
+        id: 27,
+        src: L3,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 28,
+        src: L4,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 29,
+        src: L5,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 30,
+        src: L6,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 31,
+        src: L8,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
+        id: 32,
+        src: L9,
+        title: "foo",
+        description: "bar",
+        genre_ids: [4, 25, 120],
+      },
+      {
         id: 20,
         src: S2,
         title: "foo",
@@ -259,14 +311,14 @@ const Home = () => {
               <div className="box_3">
                 <h3 className="about_name2">My Photography</h3>
                 <h4 className="desc_2">
-                  I am a Texas based wedding and portrait photographer. I
-                  started photography like most do- as a hobby! I would have
-                  never dreamt that it would eventually turn into a career for
-                  me. After beginning as a hobby I realized that I liked taking
-                  photos and making people FEEL a certain way more than I
-                  thought possible! I dived into practicing more, educating
-                  myself and thus started the beginning of a wonderful thing
-                  that is now my full-time job.
+                  I have had a passion for photography since I was young. In the
+                  early days, I didn’t know about my ability in this field. I
+                  have a bachelor’s degree in science from the University of
+                  Ruhuna and while I was at the university, I realizes I have
+                  the ability to do this. Currently, I am covering weddings,
+                  homecomings, engagements, birthday parties, fashion events, as
+                  well as pre-shoots. If you are interested you can contact me.
+                  You all are welcome to my page!
                 </h4>
               </div>
             </div>
@@ -280,7 +332,7 @@ const Home = () => {
             <div className="box_1">
               <h3 className="about_name2">I'm Disal Senevirathne</h3>
               <h4 className="desc_2">
-                I am a Texas based wedding and portrait photographer. I started
+                I am a Sri Lankan wedding and portrait photographer. I started
                 photography like most do- as a hobby! I would have never dreamt
                 that it would eventually turn into a career for me. After
                 beginning as a hobby I realized that I liked taking photos and
@@ -302,50 +354,51 @@ const Home = () => {
           <div className="">
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
-                PassionArt wedding photography sri lanka seek to portray all
-                brides & bridegrooms in their own natural style<br></br> and we
-                make the photos to be expressions of their natural charm.
-                Blending that style with our creativeness<br></br> we strive to
-                make their wedding day photos to be really awesome.
+                Disal Senevirathne Photography Sri Lanka aims to capture each
+                bride and groom in their
+                <br /> own unique natural style, and we edit the images to
+                highlight their inherent charm.
+                <br /> We aim to make their wedding day images extremely great
+                by fusing their style with our creativity.
               </h4>
             </div>
             <div className="works">
               <div className="work_div">
+              <Link to='/weddings'>
                 <button className="btn btn-light btn-rounded work_button">
-                  View Albums
+                 View Albums
                 </button>
+                </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Weddings
                 </button>
               </div>
-              {/* <div className="me-2 work_div2">
-              <button className="btn btn-light btn-rounded work_button">
-                View Albums
-              </button>
-              <button className="btn btn-warning btn-rounded work_type">
-                Homecomings
-              </button>
-            </div> */}
               <div className="work_div3">
+                <Link to='/preshoot'>
                 <button className="btn btn-light btn-rounded work_button">
-                  View Albums
+                 View Albums
                 </button>
+                </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Pre Shoots
                 </button>
               </div>
               <div className="work_div4">
+              <Link to='/fashion'>
                 <button className="btn btn-light btn-rounded work_button">
-                  View Albums
+                 View Albums
                 </button>
+                </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Fashion
                 </button>
               </div>
               <div className="work_div5">
+              <Link to='/events'>
                 <button className="btn btn-light btn-rounded work_button">
-                  View Albums
+                 View Albums
                 </button>
+                </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Events
                 </button>
@@ -360,10 +413,10 @@ const Home = () => {
           <div>
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
-                Passing wondrous moments may not come with the same glow again.
-                But we freeze them in beautiful <br></br> photographs to be
-                viewed and reviewed to ones heart’s content. And that is the
-                work we love <br></br> most – just taking pretty pictures.
+                Wonderful moments may not reappear with the same radiance.
+                However, we capture them<br/> in stunning pictures that may be looked
+                at and examined endlessly.<br/> And taking beautiful images is the
+                kind of labor we enjoy doing the most.
               </h4>
             </div>
             <div className="mt-4">
@@ -391,10 +444,9 @@ const Home = () => {
           <div>
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
-                Passing wondrous moments may not come with the same glow again.
-                But we freeze them in beautiful <br></br> photographs to be
-                viewed and reviewed to ones heart’s content. And that is the
-                work we love <br></br> most – just taking pretty pictures.
+                Clients are the most valuble assets according to us.
+                Their happiness is the <br/>most considerable thing in here. 
+                Take a look what our clients' thought on my works. 
               </h4>
             </div>
           </div>
@@ -409,7 +461,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-4">
+        <div className="mt-4" id="contact">
           <h1 className="about">Contact Me</h1>
           <h6 className="about_name">Get in touch</h6>
 
@@ -506,157 +558,7 @@ const Home = () => {
         </div>
       </div>
 
-      <footer
-        class="text-center text-lg-start text-white mt-5"
-        style={{ backgroundColor: "#fcb323" }}
-      >
-        <section class="d-flex justify-content-lg-between"></section>
-        <section class="">
-          <div class="container text-center text-md-start mt-5">
-            <div class="row mt-3">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-2"></i>Company name
-                </h6>
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Angular
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    React
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Vue
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Laravel
-                  </a>
-                </p>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Pricing
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" class="text-reset">
-                    Help
-                  </a>
-                </p>
-              </div>
-
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                  <i class="fas fa-home me-2"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i class="fas fa-envelope me-2"></i> info@example.com
-                </p>
-                <p>
-                  <i class="fas fa-phone me-2"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i class="fas fa-print me-2"></i> + 01 234 567 89
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="d-flex justify-content-center">
-          <section>
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-facebook-f" style={{fontSize:"18px"}}></i>
-            </a>
-
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-twitter" style={{fontSize:"18px"}}></i>
-            </a>
-
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-google" style={{fontSize:"18px"}}></i>
-            </a>
-
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-instagram" style={{fontSize:"18px"}}></i>
-            </a>
-
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-linkedin" style={{fontSize:"18px"}}></i>
-            </a>
-
-            <a
-              class="btn btn-floating btn-lg text-white m-1"
-              href="#!"
-              role="button"
-              data-mdb-ripple-color="dark"
-            >
-              <i class="fab fa-github" style={{fontSize:"18px"}}></i>
-            </a>
-          </section>
-        </div>
-
-        <div class="text-center p-4">
-          © 2021 Copyright:
-          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

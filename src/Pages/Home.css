@@ -336,7 +336,7 @@
   color: rgb(144, 149, 149);
   width: 300px;
   height: 450px;
-  background: url("../Assets/Home/H7.jpg") no-repeat;
+  background: url("../Assets/Home/Fashion/18.jpg") no-repeat;
   background-size: 300px 450px;
   margin: 50px;
   transition: ease-in-out 0.5s;
@@ -345,7 +345,7 @@
 }
 
 .work_div4:hover {
-  background: url("../Assets/Home/H9.jpg") no-repeat;
+  background: url("../Assets/Home/Fashion/3.jpg") no-repeat;
   background-size: 300px 450px;
   transition: ease-in-out 0.5s;
 }
@@ -373,7 +373,7 @@
 }
 
 .work_div5:hover {
-  background: url("../Assets/Home/W2.jpg") no-repeat;
+  background: url("../Assets/Home/Events/2.jpg") no-repeat;
   background-size: 300px 450px;
   transition: ease-in-out 0.5s;
 }
