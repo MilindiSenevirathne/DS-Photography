@@ -2,10 +2,72 @@ import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
 import Image from "../Assets/logo2.png";
 
-const Header = () =>{
-    return(
-        <div>
-            <div className="header">
+const Header = () => {
+  return (
+    <div>
+      <div className="colapse">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+          <div className="nav_links">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#welcome"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  WELCOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" style={{ color: "#bfbdbd" }}>
+                  ABOUT ME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works" style={{ color: "#bfbdbd" }}>
+                  MY WORKS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#captures"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  PORTFOLIO
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <div className="header">
         <div
           className="d-flex justify-content-around navbar"
           style={{ boxShadow: "none" }}
@@ -32,12 +94,20 @@ const Header = () =>{
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#captures" style={{ color: "#bfbdbd" }}>
+                <a
+                  class="nav-link"
+                  href="#captures"
+                  style={{ color: "#bfbdbd" }}
+                >
                   PORTFOLIO
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact" style={{ color: "#bfbdbd" }}>
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  style={{ color: "#bfbdbd" }}
+                >
                   CONTACT
                 </a>
               </li>
@@ -77,8 +147,8 @@ const Header = () =>{
           </div>
         </div>
       </div>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
 export default Header;
