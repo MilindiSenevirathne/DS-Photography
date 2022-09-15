@@ -465,7 +465,7 @@ const Home = () => {
           <h1 className="about">Contact Me</h1>
           <h6 className="about_name">Get in touch</h6>
 
-          <div class="contact__contents bd-grid d-flex justify-content-center mt-4">
+          <div class="contact__contents bd-grid mt-4">
             <div class="contact__box">
               <i class="bx bx-home contact__icon"></i>
               <h3 class="contact__title">Location</h3>
