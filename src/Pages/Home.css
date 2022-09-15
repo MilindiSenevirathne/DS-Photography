@@ -479,7 +479,7 @@ a.active {
 }
 
 .section {
-  width: 50%;
+  width: 100%;
 }
 
 /*==================== BUTTONS ====================*/
@@ -516,6 +516,12 @@ a.active {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin-left: 250px;
   margin-right: 250px;
+}
+
+.map__contents {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .bd-grid {
@@ -627,6 +633,15 @@ a.active {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .map__contents {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .map{
+    
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -667,6 +682,11 @@ a.active {
   }
 
   .contact__contents {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .map__contents {
     margin-left: 0;
     margin-right: 0;
   }

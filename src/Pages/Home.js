@@ -485,10 +485,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="d-flex justify-content-center mt-4">
+          <div className="map__contents bd-grid mt-4">
             <iframe
-              className="mt-3"
-              style={{ width: "35%", height: "400px", marginRight: "2rem" }}
+              className="map mt-3"
+              style={{width:"100%",height:"400px"}}
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
