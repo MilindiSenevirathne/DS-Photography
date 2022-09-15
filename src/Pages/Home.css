@@ -211,12 +211,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-}
-
-.works {
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .work_div {
@@ -614,6 +609,8 @@ a.active {
   .work_div5 {
     display: flex;
     background-size: 300px 450px;
+    width: auto;
+    height: 350px;
   }
   .popular-images {
     /* grid-template-columns:repeat(auto-fit,minmax(100px, 1fr));
