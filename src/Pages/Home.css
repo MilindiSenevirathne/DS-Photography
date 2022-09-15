@@ -640,13 +640,19 @@ a.active {
   }
 
   .map{
-    
+    height: 280px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .map{
+    height: 400px;
+    width: 100%;
   }
 
   .bd-container {

@@ -1,8 +1,6 @@
 import Slideshow from "../Components/SlideShow";
 import { useState, useEffect } from "react";
-import {
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Pages/Home.css";
 import Image2 from "../Assets/Disal.jpg";
 import ImageComponent from "../Components/Image";
@@ -364,40 +362,40 @@ const Home = () => {
             </div>
             <div className="works">
               <div className="work_div">
-              <Link to='/weddings'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/weddings">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Weddings
                 </button>
               </div>
               <div className="work_div3">
-                <Link to='/preshoot'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/preshoot">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Pre Shoots
                 </button>
               </div>
               <div className="work_div4">
-              <Link to='/fashion'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/fashion">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Fashion
                 </button>
               </div>
               <div className="work_div5">
-              <Link to='/events'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/events">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Events
@@ -414,9 +412,11 @@ const Home = () => {
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
                 Wonderful moments may not reappear with the same radiance.
-                However, we capture them<br/> in stunning pictures that may be looked
-                at and examined endlessly.<br/> And taking beautiful images is the
-                kind of labor we enjoy doing the most.
+                However, we capture them
+                <br /> in stunning pictures that may be looked at and examined
+                endlessly.
+                <br /> And taking beautiful images is the kind of labor we enjoy
+                doing the most.
               </h4>
             </div>
             <div className="mt-4">
@@ -444,9 +444,10 @@ const Home = () => {
           <div>
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
-                Clients are the most valuble assets according to us.
-                Their happiness is the <br/>most considerable thing in here. 
-                Take a look what our clients' thought on my works. 
+                Clients are the most valuble assets according to us. Their
+                happiness is the <br />
+                most considerable thing in here. Take a look what our clients'
+                thought on my works.
               </h4>
             </div>
           </div>
@@ -486,17 +487,20 @@ const Home = () => {
           </div>
 
           <div className="map__contents bd-grid mt-4">
-            <iframe
-              className="map mt-3"
-              style={{width:"100%",height:"400px"}}
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              title=" Location"
-            ></iframe>
+            <div className="section">
+              <div class="contact__container container">
+                <iframe
+                  className="map mt-3"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=disal%20senevirathne%20&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  title=" Location"
+                ></iframe>
+              </div>
+            </div>
             <div className="section mt-3">
               <div class="contact__container container grid">
                 <form
