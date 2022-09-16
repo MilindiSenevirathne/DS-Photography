@@ -1,5 +1,5 @@
 import Footer from "../Components/Footer"
-import Header from "../Components/Header"
+import Header from "../Components/HeaderH"
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import Image1 from "../Assets/Home/Preshoot/1.jpg";
 import Image2 from "../Assets/Home/Preshoot/2.jpg";

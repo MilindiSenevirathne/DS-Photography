@@ -49,7 +49,7 @@ import Image43 from "../Assets/Home/wedding/43.jpg";
 import Image44 from "../Assets/Home/wedding/44.jpg";
 import Image45 from "../Assets/Home/wedding/45.jpg";
 import DztImageGalleryComponent from "reactjs-image-gallery";
-import Header from "../Components/Header";
+import Header from "../Components/HeaderH";
 import './Home.css'
 import Footer from "../Components/Footer";
 

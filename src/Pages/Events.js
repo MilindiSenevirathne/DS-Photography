@@ -1,5 +1,5 @@
 import Footer from "../Components/Footer";
-import Header from "../Components/Header";
+import HeaderH from "../Components/HeaderH";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Image1 from "../Assets/Home/Events/1.jpg";
 import Image2 from "../Assets/Home/Events/2.jpg";
@@ -40,7 +40,7 @@ const Events = () => {
   };
   return (
     <div>
-      <Header />
+      <HeaderH />
 
       <div style={{ padding: "80px" }}>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>

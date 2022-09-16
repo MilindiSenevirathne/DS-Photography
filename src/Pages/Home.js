@@ -340,7 +340,7 @@ const Home = () => {
                 dived into practicing more, educating myself and thus started
                 the beginning of a wonderful thing that is now my full-time job.
               </h4>
-              <button className="about_button">Learn More</button>
+              <a href="https://www.facebook.com/disalgeelaka"><button className="about_button">Learn More</button></a>
             </div>
             <div className="">
               <img src={Image2} alt="Snow" className="about_img" />
