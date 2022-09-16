@@ -590,6 +590,7 @@ a.active {
   .box {
     height: 350px;
     background-size: 100%;
+    background-image: url("../Assets/2.1.jpg");
   }
   .about_img {
     margin: 0;
