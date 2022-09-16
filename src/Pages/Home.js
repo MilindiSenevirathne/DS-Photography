@@ -1,8 +1,6 @@
 import Slideshow from "../Components/SlideShow";
 import { useState, useEffect } from "react";
-import {
-    Link
-  } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Pages/Home.css";
 import Image2 from "../Assets/Disal.jpg";
 import ImageComponent from "../Components/Image";
@@ -45,6 +43,8 @@ import C3 from "../Assets/5.jpg";
 import Header from "../Components/Header";
 import SimpleImageSlider from "react-simple-image-slider";
 import Footer from "../Components/Footer";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -364,40 +364,40 @@ const Home = () => {
             </div>
             <div className="works">
               <div className="work_div">
-              <Link to='/weddings'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/weddings">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Weddings
                 </button>
               </div>
               <div className="work_div3">
-                <Link to='/preshoot'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/preshoot">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Pre Shoots
                 </button>
               </div>
               <div className="work_div4">
-              <Link to='/fashion'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/fashion">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Fashion
                 </button>
               </div>
               <div className="work_div5">
-              <Link to='/events'>
-                <button className="btn btn-light btn-rounded work_button">
-                 View Albums
-                </button>
+                <Link to="/events">
+                  <button className="btn btn-light btn-rounded work_button">
+                    View Albums
+                  </button>
                 </Link>
                 <button className="btn btn-warning btn-rounded work_type">
                   Events
@@ -414,9 +414,11 @@ const Home = () => {
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
                 Wonderful moments may not reappear with the same radiance.
-                However, we capture them<br/> in stunning pictures that may be looked
-                at and examined endlessly.<br/> And taking beautiful images is the
-                kind of labor we enjoy doing the most.
+                However, we capture them
+                <br /> in stunning pictures that may be looked at and examined
+                endlessly.
+                <br /> And taking beautiful images is the kind of labor we enjoy
+                doing the most.
               </h4>
             </div>
             <div className="mt-4">
@@ -438,15 +440,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-4" id="client">
+        {/* <div className="mt-4" id="client">
           <h1 className="about">Clients' Experences</h1>
           <h6 className="about_name">Testimonial</h6>
           <div>
             <div>
               <h4 className="desc_2" style={{ textAlign: "center" }}>
-                Clients are the most valuble assets according to us.
-                Their happiness is the <br/>most considerable thing in here. 
-                Take a look what our clients' thought on my works. 
+                Clients are the most valuble assets according to us. Their
+                happiness is the <br />
+                most considerable thing in here. Take a look what our clients'
+                thought on my works.
               </h4>
             </div>
           </div>
@@ -458,8 +461,23 @@ const Home = () => {
               showBullets={true}
               showNavs={true}
             />
+            <Carousel autoFocus={true} autoPlay={false} >
+                <div>
+                    <img src={C1} />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src={C2} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src={C3} />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
+            
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-4" id="contact">
           <h1 className="about">Contact Me</h1>
