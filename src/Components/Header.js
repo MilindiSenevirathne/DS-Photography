@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div>
       <div className="colapse">
-        <div class="mobile-container"></div>
+        <div class="mobile-container">
         <div className="collapse" id="navbarToggleExternalContent">
           <div className="bg-dark p-4">
             <h5 className="text-white h4">Collapsed content</h5>
@@ -37,6 +37,8 @@ const Header = () => {
             </button>
           </div>
         </nav>
+        </div>
+        
       </div>
       <div className="header">
         <div
