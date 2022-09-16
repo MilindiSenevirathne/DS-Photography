@@ -1,46 +1,31 @@
 import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
 import Image from "../Assets/logo2.png";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-
-    function myFunction() {
-        let x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
+  function myFunction() {
+    let x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
   return (
     <div>
       <div className="colapse">
-      <div class="mobile-container">
-
-<div class="topnav">
-  <a href="#home" class="active">Logo</a>
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick={()=>myFunction()}>
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-{/* <div style="padding-left:16px">
-  <h3>Vertical Mobile Navbar</h3>
-  <p>This example demonstrates how a navigation menu on a mobile/smart phone could look like.</p>
-  <p>Click on the hamburger menu (three bars) in the top right corner, to toggle the menu.</p>
-</div> */}
-
-
-</div>
-        <nav class="navbar navbar-dark bg-dark">
-          <div class="container-fluid">
+        <div class="mobile-container"></div>
+        <div className="collapse" id="navbarToggleExternalContent">
+          <div className="bg-dark p-4">
+            <h5 className="text-white h4">Collapsed content</h5>
+            <span className="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav className="navbar navbar-dark bg-dark">
+          <div className="container-fluid">
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-mdb-toggle="collapse"
               data-mdb-target="#navbarToggleExternalContent"
@@ -48,7 +33,7 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <i class="fas fa-bars"></i>
+              <i className="fas fa-bars"></i>
             </button>
           </div>
         </nav>

@@ -331,7 +331,7 @@
   color: rgb(144, 149, 149);
   width: 300px;
   height: 450px;
-  background: url("../Assets/Home/Fashion/18.jpg") no-repeat;
+  background: url("../Assets/Home/Fashion/3.jpg") no-repeat;
   background-size: 300px 450px;
   margin: 50px;
   transition: ease-in-out 0.5s;
@@ -340,7 +340,7 @@
 }
 
 .work_div4:hover {
-  background: url("../Assets/Home/Fashion/3.jpg") no-repeat;
+  background: url("../Assets/Home/Fashion/18.jpg") no-repeat;
   background-size: 300px 450px;
   transition: ease-in-out 0.5s;
 }
@@ -547,49 +547,10 @@ a.active {
 }
 
 .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  .topnav #myLinks {
     display: none;
   }
   
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
   
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
 
 @media screen and (max-width: 390px) {
   .nav_links {
@@ -655,7 +616,7 @@ a.active {
     display: flex;
     background-size: 300px 450px;
     width: auto;
-    height: 350px;
+    height: 420px;
   }
   .popular-images {
     /* grid-template-columns:repeat(auto-fit,minmax(100px, 1fr));
