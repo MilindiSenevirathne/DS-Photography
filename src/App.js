@@ -20,8 +20,6 @@ function App() {
           <Route path="/events" element={<Events/>}/>
         </Routes>
       </BrowserRouter>
-      {/* <Home /> */}
-      {/* <Weddings /> */}
     </div>
   );
 }

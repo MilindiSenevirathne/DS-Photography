@@ -34,7 +34,7 @@ const images = [
 
 const Events = () => {
   const [data, setData] = useState({ img: "", i: 0 });
-
+  window.scrollTo(0, 0);
   const viewImage = (img, i) => {
     setData({ img, i });
   };

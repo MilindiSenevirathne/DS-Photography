@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { render } from "react-dom";
 // import ResponsiveGallery from 'react-responsive-gallery';
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import Gallery from 'react-photo-gallery';
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Gallery from "react-photo-gallery";
 import Image1 from "../Assets/Home/wedding/1.jpg";
 import Image2 from "../Assets/Home/wedding/2.jpg";
 import Image3 from "../Assets/Home/wedding/3.jpg";
@@ -50,78 +50,90 @@ import Image44 from "../Assets/Home/wedding/44.jpg";
 import Image45 from "../Assets/Home/wedding/45.jpg";
 import DztImageGalleryComponent from "reactjs-image-gallery";
 import Header from "../Components/HeaderH";
-import './Home.css'
+import "./Home.css";
 import Footer from "../Components/Footer";
 
 const images = [
-    Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8,
-    Image9, Image10, Image11, Image12, Image13, Image14, Image15,
-    Image16, Image17, Image18, Image19, Image20, Image21,Image22,
-    Image23,Image24,Image25,Image26,Image27,Image28,Image29,Image30,
-    Image31,Image32,Image33,Image34,Image35,Image36,Image37,Image38,Image39,
-    Image40,Image41,Image42,Image43,Image44,Image45
-  ];
-
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+  Image11,
+  Image12,
+  Image13,
+  Image14,
+  Image15,
+  Image16,
+  Image17,
+  Image18,
+  Image19,
+  Image20,
+  Image21,
+  Image22,
+  Image23,
+  Image24,
+  Image25,
+  Image26,
+  Image27,
+  Image28,
+  Image29,
+  Image30,
+  Image31,
+  Image32,
+  Image33,
+  Image34,
+  Image35,
+  Image36,
+  Image37,
+  Image38,
+  Image39,
+  Image40,
+  Image41,
+  Image42,
+  Image43,
+  Image44,
+  Image45,
+];
 
 const Weddings = () => {
+  const [data, setData] = useState({ img: "", i: 0 });
 
-    const [data,setData]=useState({img: '',i:0})
-
-    const viewImage = (img,i)=>{
-        setData({img,i})
-    }
-
-    // const imgAction = (action) =>{
-    //     let i= data.i;
-    //     if(action==='next'){
-    //         setData({img:images[i+1], i:i+1})
-    //     }
-    // }
+  window.scrollTo(0, 0)
+  
+  const viewImage = (img, i) => {
+    setData({ img, i });
+  };
 
   return (
     <>
-   
-    <div>
-        <Header/>
-        {/* {data.img && 
-        <div style={{
-            width:"100%",
-            heigth:"100vh",
-            background:"black",
-            position:"fixed",
-            display:"flex",
-            justifyContent:"center",
-            alignItems:"center",
-            overflow:"hidden"
-        }}>
-            <button style={{position:"absolute", top:"10px", right:"10px"}}>X</button>
-            <button>Previous</button>
-            <img src={data.img} style={{width:'auto', maxWidth:"90%", maxHeight:"90%"}} />
-            <button onClick={()=>imgAction('next')}>Next</button>
+      <div>
+        <Header />
+        <div style={{ padding: "80px" }}>
+          <ResponsiveMasonry
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+          >
+            <Masonry gutter="10px">
+              {images.map((image, i) => (
+                <img
+                  key={i}
+                  src={image}
+                  style={{ width: "100%", display: "block" }}
+                  alt=""
+                  onClick={() => viewImage(image, i)}
+                />
+              ))}
+            </Masonry>
+          </ResponsiveMasonry>
         </div>
-    } */}
-      <div style={{padding:"80px"}}>
-      {/* <DztImageGalleryComponent images={images} imgClassName="gallery_img" hideDownload={true} imageBackgroundColor="#fff"/> */}
-      {/* <Gallery photos={images} />; */}
-      <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-            >
-                <Masonry gutter="10px">
-                    {images.map((image, i) => (
-                        <img
-                            key={i}
-                            src={image}
-                            style={{width: "100%", display: "block"}}
-                            alt=""
-                            onClick={()=>viewImage(image, i)}
-                        />
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-        </>
+    </>
   );
 };
 
