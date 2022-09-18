@@ -17,8 +17,8 @@ import A9 from "../Assets/Home/Favourite/A9.jpg";
 import N1 from "../Assets/Home/Favourite/N1.jpg";
 import N2 from "../Assets/Home/Favourite/N2.jpg";
 import N3 from "../Assets/Home/Favourite/N3.jpg";
-import N4 from "../Assets/Home/Favourite/N4.jpg";
-import N5 from "../Assets/Home/Favourite/N5.jpg";
+import N4 from "../Assets/Home/Favourite/N4.JPG";
+import N5 from "../Assets/Home/Favourite/N5.JPG";
 import N6 from "../Assets/Home/Favourite/N6.jpg";
 import N8 from "../Assets/Home/Favourite/N8.jpg";
 import N9 from "../Assets/Home/Favourite/N9.jpg";
@@ -30,13 +30,13 @@ import L5 from "../Assets/Home/Favourite/L5.jpg";
 import L6 from "../Assets/Home/Favourite/L6.jpg";
 import L8 from "../Assets/Home/Favourite/L8.jpg";
 import L9 from "../Assets/Home/Favourite/L9.jpg";
-import S2 from "../Assets/Home/Favourite/S2.jpg";
+import S2 from "../Assets/Home/Favourite/S2.JPG";
 import S3 from "../Assets/Home/Favourite/S3.jpg";
-import S4 from "../Assets/Home/Favourite/S4.jpg";
-import S5 from "../Assets/Home/Favourite/S5.jpg";
-import S6 from "../Assets/Home/Favourite/S6.jpg";
-import S7 from "../Assets/Home/Favourite/S7.jpg";
-import S8 from "../Assets/Home/Favourite/S8.jpg";
+import S4 from "../Assets/Home/Favourite/S4.JPG";
+import S5 from "../Assets/Home/Favourite/S5.JPG";
+import S6 from "../Assets/Home/Favourite/S6.JPG";
+import S7 from "../Assets/Home/Favourite/S7.JPG";
+import S8 from "../Assets/Home/Favourite/S8.JPG";
 import C1 from "../Assets/3.jpg";
 import C2 from "../Assets/4.jpg";
 import C3 from "../Assets/5.jpg";
@@ -44,7 +44,7 @@ import Header from "../Components/Header";
 import SimpleImageSlider from "react-simple-image-slider";
 import Footer from "../Components/Footer";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 const Home = () => {
   const [popular, setPopular] = useState([]);
@@ -340,7 +340,9 @@ const Home = () => {
                 dived into practicing more, educating myself and thus started
                 the beginning of a wonderful thing that is now my full-time job.
               </h4>
-              <a href="https://www.facebook.com/disalgeelaka"><button className="about_button">Learn More</button></a>
+              <a href="https://www.facebook.com/disalgeelaka">
+                <button className="about_button">Learn More</button>
+              </a>
             </div>
             <div className="">
               <img src={Image2} alt="Snow" className="about_img" />
