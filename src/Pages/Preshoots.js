@@ -1,6 +1,6 @@
-import Footer from "../Components/Footer"
-import Header from "../Components/HeaderH"
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import Footer from "../Components/Footer";
+import Header from "../Components/HeaderH";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Image1 from "../Assets/Home/Preshoot/1.jpg";
 import Image2 from "../Assets/Home/Preshoot/2.jpg";
 import Image3 from "../Assets/Home/Preshoot/3.jpg";
@@ -44,48 +44,82 @@ import Image41 from "../Assets/Home/Preshoot/41.jpg";
 import Image42 from "../Assets/Home/Preshoot/42.jpg";
 import Image43 from "../Assets/Home/Preshoot/43.jpg";
 import Image44 from "../Assets/Home/Preshoot/44.jpg";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const images = [
-    Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8,
-    Image9, Image10, Image11, Image12, Image13, Image14, Image15,
-    Image16, Image17, Image18, Image19, Image20, Image21,Image22,
-    Image23,Image24,Image25,Image26,Image27,Image28,Image30,
-    Image31,Image32,Image33,Image34,Image35,Image36,Image37,Image38,Image39,
-    Image40,Image41,Image42,Image43,Image44
-  ];
+  Image1,
+  Image2,
+  Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
+  Image9,
+  Image10,
+  Image11,
+  Image12,
+  Image13,
+  Image14,
+  Image15,
+  Image16,
+  Image17,
+  Image18,
+  Image19,
+  Image20,
+  Image21,
+  Image22,
+  Image23,
+  Image24,
+  Image25,
+  Image26,
+  Image27,
+  Image28,
+  Image30,
+  Image31,
+  Image32,
+  Image33,
+  Image34,
+  Image35,
+  Image36,
+  Image37,
+  Image38,
+  Image39,
+  Image40,
+  Image41,
+  Image42,
+  Image43,
+  Image44,
+];
 
-const Preshoots = () =>{
+const Preshoots = () => {
+  const [data, setData] = useState({ img: "", i: 0 });
+  window.scrollTo(0, 0);
+  const viewImage = (img, i) => {
+    setData({ img, i });
+  };
+  return (
+    <div>
+      <Header />
 
-    const [data,setData]=useState({img: '',i:0})
-
-    const viewImage = (img,i)=>{
-        setData({img,i})
-    }
-    return(
-        <div>
-        <Header/>
-    
-      <div style={{padding:"80px"}}>
-      <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-            >
-                <Masonry gutter="10px">
-                    {images.map((image, i) => (
-                        <img
-                            key={i}
-                            src={image}
-                            style={{width: "100%", display: "block"}}
-                            alt=""
-                            onClick={()=>viewImage(image, i)}
-                        />
-                    ))}
-                </Masonry>
-            </ResponsiveMasonry>
+      <div style={{ padding: "80px" }}>
+        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
+          <Masonry gutter="10px">
+            {images.map((image, i) => (
+              <img
+                key={i}
+                src={image}
+                style={{ width: "100%", display: "block" }}
+                alt=""
+                onClick={() => viewImage(image, i)}
+              />
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-    )
-}
+  );
+};
 
 export default Preshoots;

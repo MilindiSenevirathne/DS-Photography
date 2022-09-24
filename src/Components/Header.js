@@ -4,14 +4,6 @@ import Image from "../Assets/logo2.png";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  function myFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
   return (
     <div>
       <div className="colapse">
