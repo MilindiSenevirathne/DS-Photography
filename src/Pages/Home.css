@@ -561,6 +561,10 @@ a.active {
     font-size: 20px;
   }
 
+  .weddings{
+    padding: 10px 60px 60px 60px;
+  }
+
   .camera_img {
     height: 65px;
   }
@@ -657,6 +661,10 @@ a.active {
 @media screen and (min-width: 1024px) {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weddings{
+    padding: 80px;
   }
 
   .map {
