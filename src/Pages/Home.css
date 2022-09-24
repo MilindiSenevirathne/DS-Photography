@@ -672,7 +672,7 @@ a.active {
   }
 }
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   
 
   .camera_img {
@@ -763,5 +763,5 @@ a.active {
   .map{
     height: 280px;
     width: 100%;
-  } */
+  }
 }
