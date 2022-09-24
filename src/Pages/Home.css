@@ -530,7 +530,7 @@ a.active {
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 6px rgb(174 190 205 / 30%);
-  width:300px;
+  width: 300px;
 }
 
 .contact__box:hover {
@@ -547,13 +547,11 @@ a.active {
 }
 
 .mobile-container {
-    display: none;
-  }
-  
-  
+  display: none;
+}
 
 @media screen and (max-width: 390px) {
-  .mobile-container{
+  .mobile-container {
     display: inline;
   }
   .nav_links {
@@ -596,7 +594,7 @@ a.active {
     background-size: 100%;
     background-image: url("../Assets/2.1.jpg");
   }
-  .box_3{
+  .box_3 {
     height: 250px;
   }
   .about_img {
@@ -635,7 +633,7 @@ a.active {
   }
 
   .contact__box {
-    width:auto;
+    width: auto;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -650,7 +648,7 @@ a.active {
     margin-right: 0;
   }
 
-  .map{
+  .map {
     height: 280px;
     width: 100%;
   }
@@ -661,7 +659,7 @@ a.active {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .map{
+  .map {
     height: 400px;
     width: 100%;
   }
@@ -675,5 +673,3 @@ a.active {
     display: none;
   }
 }
-
-
