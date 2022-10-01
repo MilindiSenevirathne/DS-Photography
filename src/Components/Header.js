@@ -2,33 +2,82 @@ import Facebook from "../Assets/facebook.png";
 import Instagram from "../Assets/instagram (1).png";
 import Image from "../Assets/logo2.png";
 import { FaBars } from "react-icons/fa";
+import React, { useState } from 'react';
+import {
+  MDBNavbar,
+  MDBContainer,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBIcon,
+  MDBCollapse
+} from 'mdb-react-ui-kit';
 
 const Header = () => {
+
+  const [showNavExternal, setShowNavExternal] = useState(false);
   return (
     <div>
       <div className="colapse">
         <div class="mobile-container">
-        <div className="collapse" id="navbarToggleExternalContent">
-          <div className="bg-dark p-4">
-            <h5 className="text-white h4">Collapsed content</h5>
-            <span className="text-muted">Toggleable via the navbar brand.</span>
-          </div>
+        <MDBCollapse show={showNavExternal}>
+        <div className='bg-dark p-4'>
+          <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#welcome"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  WELCOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" style={{ color: "#bfbdbd" }}>
+                  ABOUT ME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works" style={{ color: "#bfbdbd" }}>
+                  MY WORKS
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#captures"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  PORTFOLIO
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  style={{ color: "#bfbdbd" }}
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
         </div>
-        <nav className="navbar navbar-dark bg-dark">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-        </nav>
+      </MDBCollapse>
+      <MDBNavbar dark bgColor='dark'>
+        <MDBContainer fluid>
+          <MDBNavbarToggler
+            type='button'
+            data-target='#navbarToggleExternalContent'
+            aria-controls='navbarToggleExternalContent'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+            onClick={() => setShowNavExternal(!showNavExternal)}
+          >
+            <MDBIcon icon='bars' fas />
+          </MDBNavbarToggler>
+        </MDBContainer>
+      </MDBNavbar>
         </div>
         
       </div>
