@@ -293,12 +293,12 @@ const Home = () => {
         </div>
 
         <div className="location">
-          <h5>Hirana. Panadura</h5>
+          <h5 style={{marginBottom:"0px"}}>Hirana. Panadura</h5>
           <div class="d-flex justify-content-center line">
             <div class="vr"></div>
           </div>
           <div>
-            <h6 className="mt-2">
+            <h6>
               We make your special days with splendid memories to last a
               lifetime.
             </h6>

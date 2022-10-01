@@ -114,7 +114,7 @@ const Weddings = () => {
     <>
       <div>
         <Header />
-        <div style={{ padding: "80px" }}>
+        <div className="weddings">
           <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           >

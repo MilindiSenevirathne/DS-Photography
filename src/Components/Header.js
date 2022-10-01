@@ -84,7 +84,7 @@ const Header = () => {
       <div className="header">
         <div
           className="d-flex justify-content-around navbar"
-          style={{ boxShadow: "none" }}
+          style={{ boxShadow: "none", paddingTop:"0px" }}
         >
           <div className="nav_links">
             <ul class="nav flex-column">
